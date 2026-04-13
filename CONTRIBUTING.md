@@ -6,8 +6,8 @@ Thanks for considering a contribution. The skills in this repo are actively used
 
 - **Bug fixes** in skill prompts (factual errors, broken references, outdated data)
 - **Better citations** for statistical claims (primary sources beat secondary sources; direct patent / study links beat blog posts)
-- **New content-type templates** for `research/content-writing/` if the type is genuinely underserved
-- **New link-building playbooks** for `research/linkbuilding/` with realistic conversion rates from your own tests
+- **New content-type templates** for `skills/write-content/references/content-types/` (and the matching `skills/improve-content/references/content-types/` copy) if the type is genuinely underserved
+- **New link-building playbooks** for `skills/linkbuilding/references/tactics/` with realistic conversion rates from your own tests
 - **Anti-slop ruleset additions** — new structural tells, banned vocabulary, or detection heuristics that you've seen catch AI content in the wild
 - **Translations** of individual skills to other languages (keep the English version alongside)
 
