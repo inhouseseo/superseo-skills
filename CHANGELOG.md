@@ -6,7 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-04-13
+## [0.2.0] - 2026-04-13
+
+Restructures every skill to the bundled-references layout so the skills work identically in every environment (Claude Code plugin, Claude Desktop, Cursor, bare markdown). The 39 research files from the old top-level `research/content-writing/` and `research/linkbuilding/` folders have been distributed into per-skill `references/` folders, and 28 new skill-specific reference files have been written to fill gaps where the skill body pointed at material that didn't exist. Installs as a Claude Code plugin marketplace with one command.
+
+### Added
+
+- **`.claude-plugin/marketplace.json`** — plugin marketplace manifest so users can install with `/plugin marketplace add inhouseseo/superseo-skills` followed by `/plugin install superseo-skills@superseo-skills`. All 11 skills are listed by path; the bundled `references/` folders install alongside automatically.
+- **28 new skill-specific reference files** written across 9 skills to fill gaps in the n×n skill-to-research coverage analysis (see below). Highlights:
+  - `page-audit/references/` — `pop-test-hierarchy.md`, `eeat-scoring-rubric-compact.md`, `semantic-entity-checklist.md`, `content-types-audit-summary.md`
+  - `keyword-deep-dive/references/` — `ctr-benchmarks-by-position.md`, `zero-click-and-aio-impact.md`, `serp-features-recognition.md`, `serp-volatility-heuristics.md`, `difficulty-from-serp-signals.md`
+  - `semantic-gap-analysis/references/` — `eav-triple-worked-examples.md`, `predicate-verb-fields.md`, `gap-classification-rubric.md`
+  - `eeat-audit/references/` — `ymyl-scoring-rubric.md`, `fastest-eeat-wins.md`, `experience-detection-playbook.md`, `author-schema-templates.md`
+  - `topic-cluster-planning/references/` — `first-link-weight-evidence.md`, `publishing-sequence-decisions.md`, `spoke-selection-worked-example.md`
+  - `featured-snippet-optimizer/references/` — `query-format-matching-expanded.md`, `snippet-format-templates.md`, `aio-vs-snippet-decision.md`
+  - `linkbuilding/references/` — `anchor-text-safety-guide.md`, `phase-classification-tree.md`, `link-velocity-redflags.md`
+  - `expert-interview/references/` — `question-bank-by-topic.md`, `knowledge-doc-template.md`
+  - `content-brief/`, `write-content/`, `improve-content/` — shared `content-types-overview.md` decision table across all 23 content types
+- **"Bundled references" sections** added to every SKILL.md body. Each reference file is tagged with the specific step, rule, or situation that triggers loading it, so the agent pulls one file at a time instead of preloading the whole folder.
+
+### Changed
+
+- **Per-skill `references/` layout**. The old top-level `research/content-writing/` and `research/linkbuilding/` folders have been split apart and distributed into `skills/<name>/references/` subfolders. Each skill now ships with only the reference files it actually uses. This matches Anthropic's canonical pptx/docx skill pattern and fixes the Claude Desktop / Cursor caveat where sibling directories couldn't auto-resolve.
+- **Content-type templates** (23 total) now live in `skills/<name>/references/content-types/` under `write-content`, `improve-content`, `eeat-audit`, and `featured-snippet-optimizer` — each skill gets the subset it actually needs. Previously all 23 were in one top-level `research/content-writing/` folder.
+- **Link-building tactic playbooks** (9 total) moved from `research/linkbuilding/` to `skills/linkbuilding/references/tactics/`. The SKILL.md now references tactics by slug (`entity-stacking.md`, `guest-posting.md`, etc.) instead of by the old `tactic-NN-[slug]` numbered naming.
+- **SKILL.md paths updated**: the 4 skills that had explicit `research/content-writing/` or `research/linkbuilding/` references in their bodies (`content-brief`, `write-content`, `improve-content`, `linkbuilding`) now point at local `references/...` paths. No skill references the removed top-level research folder anymore.
+- **README Quick Start rewritten** around the plugin marketplace install as the primary path, with manual install as a fallback. Claude Desktop / Cursor sections now explain the Project Knowledge / on-demand-paste options for the bundled references instead of referencing a top-level research folder.
+- **README "What's inside"** reorganized to describe references by which skill bundles them, rather than by the old monolithic `research/` structure.
+
+### Fixed
+
+- **Write-once reference parity**. In v0.1.0 some skill bodies referenced material (e.g., "load the POP test hierarchy", "load the YMYL scoring rubric") that didn't exist as a standalone file. The n×n analysis surfaced 28 such gaps; each now has a dedicated reference file written to match the existing v0.1.0 writing quality (voice, citation density, specificity, anti-slop compliance).
+- **Cross-environment consistency**. Because each skill now bundles its own references, the Claude Desktop / Cursor paste workflow no longer needs a separate step for loading the research library — the references are in the same folder as the SKILL.md and can be uploaded to Project Knowledge or pasted in when the skill calls for them.
+
 
 Initial public release of the SuperSEO Skills pack: 11 opinionated Claude skills for SEO, plus 23 content-type templates, a 16-module writing technique library, and 9 link-building tactic playbooks. Production-tested at InhouseSEO, open-sourced under the Apache License 2.0.
 
@@ -56,5 +88,6 @@ Initial public release of the SuperSEO Skills pack: 11 opinionated Claude skills
 - Anti-AI-slop ruleset draws on [Wikipedia's AI cleanup project](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), StyloAI's stylometric research, [blader/humanizer](https://github.com/blader/humanizer), and [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing)
 - GEO research references the [Princeton / Georgia Tech / AI2 / IIT Delhi GEO paper (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735)
 
-[Unreleased]: https://github.com/inhouseseo/superseo-skills/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/inhouseseo/superseo-skills/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/inhouseseo/superseo-skills/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/inhouseseo/superseo-skills/releases/tag/v0.1.0
