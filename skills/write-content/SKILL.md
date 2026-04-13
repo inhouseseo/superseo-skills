@@ -19,11 +19,14 @@ If no topic is given, ask for one before proceeding.
 
 Business context (audience, tone, language, brand voice, examples) shapes every article. Don't re-ask these questions every session.
 
-**First use**: ask 4-5 questions and save the answers somewhere persistent in your agent's environment:
-- **Claude Code**: write to `./CLAUDE.md` or `~/.claude/projects/<path>/memory/business-context.md`
-- **Claude Desktop / Claude.ai**: save to a Project's context or a pinned note
-- **Cursor**: write to `.cursor/rules/business-context.md`
-- **Any other agent**: save to `seo-context.md` in the working directory
+**First use**: ask 4-5 questions and save the answers somewhere persistent in your agent's environment. Use the safest default first:
+
+- **Claude Code**: `~/.claude/projects/<path>/memory/business-context.md` is the recommended default. Do NOT write to `./CLAUDE.md` unless the user explicitly asks for it — `CLAUDE.md` is the user's project instructions file and appending unsolicited content to it can surprise them on every subsequent agent turn.
+- **Claude Desktop / Claude.ai**: save to a Project's context or a pinned note.
+- **Cursor**: `.cursor/rules/business-context.md`.
+- **Any other agent**: `seo-context.md` in the working directory.
+
+Always confirm the write location with the user before saving. If any of these are unavailable or the user objects, fall back to re-asking the questions each session.
 
 **Every use after that**: load that file first. If missing, ask where the user saved it or re-ask the questions.
 
