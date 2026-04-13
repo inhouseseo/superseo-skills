@@ -2,7 +2,7 @@
 
 ## What It Is
 
-Optimizing content to be cited by AI systems -- ChatGPT, Claude, Perplexity, Google AI Overviews. A Princeton/Georgia Tech study found 40% visibility improvements using core GEO techniques. This is the emerging complement to traditional SEO.
+Optimizing content to be cited by AI systems -- ChatGPT, Claude, Perplexity, Google AI Overviews. The foundational academic work is [GEO: Generative Engine Optimization (Aggarwal et al., Princeton / Georgia Tech / Allen Institute for AI / IIT Delhi, KDD 2024)](https://arxiv.org/abs/2311.09735), which found 40% visibility improvements in generative engine responses using core GEO techniques. This is the emerging complement to traditional SEO.
 
 ## Why It Works
 
@@ -10,18 +10,17 @@ AI systems cite content that is: easy to extract, verifiable, authoritative, and
 
 ## Key Statistics
 
-- 92% of AI Overview citations come from top-10 ranking pages
-- FAQ schema has 3.2x higher citation rate in AI Overviews
-- Authors with presence across Wikipedia, Reddit, LinkedIn are 2.8x more likely to be cited
-- Brand search volume (not backlinks) shows strongest correlation with AI citations
-- ChatGPT shows strongest recency preference: 76.4% of most-cited pages updated within 30 days
-- Over 53% of pages cited in AI Overviews are under 1,000 words
+- AI Overview citations and traditional ranking are rapidly decoupling: Ahrefs' [July 2025 study](https://ahrefs.com/blog/search-rankings-ai-citations/) found 76% of cited pages ranked in the top 10 for the same query, but the [February 2026 update](https://ahrefs.com/blog/ai-overview-citations-top-10/) dropped that figure to 38% — meaning pages now get cited more often from outside the top 10. Ranking still helps, but GEO is diverging from classical SEO.
+- FAQ schema improves citation rates in AI Overviews, but the effect varies by source. [Relixir's 50-site study (July 2025)](https://relixir.ai/blog/faq-howto-schema-google-ai-mode-gemini-2-study-2025) found pages with proper FAQPage schema had a 41% citation rate vs 15% for pages without (34% higher inclusion in AI-generated responses). BrightEdge reports a 44% increase in AI search citations from structured data and FAQ blocks. SE Ranking's analysis found a weaker or slightly negative correlation — results depend heavily on implementation quality.
+- ChatGPT shows the strongest recency preference of major generative engines: multiple vendor studies report that pages updated within the past 30 days have a significant citation advantage, and content freshness often outweighs domain authority. Search Engine Land [summarized the recency data here](https://searchengineland.com/chatgpt-citations-content-study-469483).
+- AI Overview citations lean toward shorter content: Ahrefs found that [over 53% of pages cited in AI Overviews are under 1,000 words](https://ahrefs.com/blog/short-vs-long-content-in-ai-overviews/), a notable departure from classical SEO's preference for comprehensive coverage.
+- Brand search volume correlates more strongly with AI citations than raw backlink count in multiple vendor analyses — AI systems weight brand recognition as an authority signal, not just link equity.
 
 ## Step-by-Step Process
 
-### Step 1: Answer-First Formatting (+340% AI citations)
+### Step 1: Answer-First Formatting
 
-Lead every major section with a clear, extractable answer before expanding with detail.
+Lead every major section with a clear, extractable answer before expanding with detail. Vendor case studies (see [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog)) report citation rate improvements approaching 340% from this change alone, though effect sizes vary by content type and query.
 
 **Pattern:**
 ```
@@ -34,9 +33,9 @@ Lead every major section with a clear, extractable answer before expanding with 
 
 **Why it works:** AI systems scan for concise, authoritative statements they can extract and cite. An answer buried in paragraph 3 of a section is less likely to be cited than one at the top.
 
-### Step 2: FAQ Schema Implementation (+28% AI citations)
+### Step 2: FAQ Schema Implementation
 
-FAQPage schema makes content 3.2x more likely to appear in AI Overviews.
+FAQPage schema materially increases inclusion in AI Overviews per the Relixir 50-site study cited in Key Statistics (41% citation rate with proper schema, 15% without). Vendor data suggests an additional citation boost in the 22-44% range from schema-rich pages.
 
 **Implementation:**
 - Include 3-5 FAQ items per page
@@ -136,10 +135,10 @@ The writing skill should optimize for BOTH simultaneously. The overlap is large:
 
 ## Common Mistakes
 
-1. **Optimizing for AI only** -- 92% of AI citations come from top-10 ranking pages, so traditional SEO is still the foundation
+1. **Optimizing for AI only** -- traditional SEO is still meaningfully correlated with AI Overview citations (76% in mid-2025, 38% in early 2026 per Ahrefs). Ranking well remains the strongest single input to getting cited.
 2. **Burying answers in paragraphs** -- AI systems need clear, extractable statements at section tops
 3. **Vague attributions** -- "research shows" is not citable; "(Ahrefs, 2025)" is
-4. **Ignoring structured data** -- FAQ schema alone provides a 3.2x citation boost
+4. **Ignoring structured data** -- FAQ schema provides a measurable citation lift per Relixir's 50-site study, especially for B2B and ecommerce content
 
 ## Key Sources
 
