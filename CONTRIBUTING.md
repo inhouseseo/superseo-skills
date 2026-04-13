@@ -58,7 +58,7 @@ The skills are written to sound like a practitioner explaining something to a pe
 
 ## License
 
-By submitting a PR you agree that your contribution will be licensed under [CC BY-NC 4.0](LICENSE) alongside the rest of the repo.
+By submitting a PR you agree that your contribution will be licensed under the [Apache License 2.0](LICENSE) alongside the rest of the repo. Please keep the existing `NOTICE` file entries intact.
 
 ## Questions
 

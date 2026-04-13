@@ -42,4 +42,4 @@ We aim to acknowledge reports within 72 hours and ship a fix or clarification wi
 
 We take security concerns seriously and will work with reporters in good faith. Reporters who disclose privately and give us time to respond will be credited in the fix commit (with permission) and mentioned in the repo's changelog.
 
-Note that this repository is licensed under [CC BY-NC 4.0](LICENSE) and provided without warranty. The license disclaims warranties of any kind, but that does not change our commitment to addressing security issues promptly.
+Note that this repository is licensed under the [Apache License 2.0](LICENSE) and provided without warranty. The license disclaims warranties of any kind, but that does not change our commitment to addressing security issues promptly.

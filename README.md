@@ -166,20 +166,11 @@ Free 14-day trial at **[inhouseseo.ai](https://inhouseseo.ai)**.
 
 ## License
 
-Released under **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE)**.
+Released under the **[Apache License 2.0](LICENSE)**.
 
-**You are free to:**
-- Use these skills for your own sites
-- Use them for paid client work in an agency or in-house role
-- Modify them, fork them, learn from them, teach from them
-- Share them with attribution
+You are free to use, modify, and redistribute these skills — including for your own sites, agency client work, derivative works, and commercial products. Apache 2.0 requires that you preserve the copyright notice and the `NOTICE` file in any redistribution, and that substantial modifications be marked; see the full license text for details.
 
-**You may not:**
-- Repackage them into a paid product
-- Sell them as a course or playbook
-- Build a commercial SEO tool around them
-
-If you want to do any of the above, [get in touch](mailto:hello@inhouseseo.ai) about a commercial license.
+If you build something interesting on top of these skills, we'd love to hear about it — drop a note at [hello@inhouseseo.ai](mailto:hello@inhouseseo.ai).
 
 ---
 
