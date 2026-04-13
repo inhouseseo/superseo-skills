@@ -34,9 +34,9 @@ Note for each top 3:
 Classify dominant intent: **Informational / Commercial Investigation / Transactional / Navigational**.
 
 **Zero-click risk assessment:**
-- Informational queries: 50%+ of desktop searches end without a click (2026 data)
-- Featured snippet present: 42.9% CTR if we hold it; near-zero if we don't
-- AI Overview present: organic CTR drops 58-61%; only cited pages get 35% more clicks
+- Informational queries: roughly 60% of searches end without a click ([Digital Bloom 2026 organic traffic report](https://thedigitalbloom.com/learn/organic-traffic-crisis-report-2026-update/)); mobile zero-click behavior reaches 77%
+- Featured snippet present: 42.9% CTR if we hold it, near-zero if we don't ([First Page Sage 2026](https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/))
+- AI Overview present: organic CTR drops 58-61% for the top-ranking page ([Ahrefs Dec 2025](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/) / [Seer Interactive](https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update)); brands cited in the AI Overview earn 35% more clicks
 - Flag clearly if the keyword has structurally low click-through potential
 
 ## Step 3: Assess SERP Features

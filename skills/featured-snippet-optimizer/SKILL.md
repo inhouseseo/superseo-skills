@@ -5,7 +5,7 @@ description: Use when you want to win a featured snippet for a keyword you alrea
 
 # Featured Snippet Optimizer
 
-Featured snippets get 42.9% CTR (vs 39.8% for organic #1 without a snippet). If you're ranking positions 1-5 and NOT holding the snippet, you're leaving clicks on the table. This skill finds the gap and fixes it.
+Featured snippets get 42.9% CTR versus 39.8% for organic #1 without a snippet ([First Page Sage 2026 CTR study](https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/)). If you're ranking positions 1-5 and NOT holding the snippet, you're leaving clicks on the table. This skill finds the gap and fixes it.
 
 ## Input
 

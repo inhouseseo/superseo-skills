@@ -98,7 +98,7 @@ For each dimension: Score (1-10) | What works (specific) | What doesn't (with ex
 
 ### DIMENSION 1: INFORMATION GAIN & ORIGINALITY
 
-The #1 ranking factor nobody talks about openly. Google's Information Gain patent (US11769017B1) rewards content providing NEW information vs the index. This matters more than any on-page SEO trick.
+The #1 ranking factor nobody talks about openly. Google's [Information Gain patent](https://www.searchenginejournal.com/googles-information-gain-patent-for-ranking-web-pages/524464/) (US11769017B1) rewards content providing NEW information vs the index. This matters more than any on-page SEO trick.
 
 - Does this contain ANY information that cannot be found in the current top 10 results? If not, why would Google rank it?
 - Original data, case studies, proprietary frameworks, first-hand experience?
@@ -165,14 +165,14 @@ Real E-E-A-T is demonstrated, not declared.
 
 ### DIMENSION 5: TECHNICAL ON-PAGE SEO
 
-Kyle Roof's controlled PageOptimizer Pro experiments prove on-page factors have a strict hierarchy:
+Kyle Roof's [PageOptimizer Pro](https://www.pageoptimizer.pro) (400+ controlled Google algorithm tests, US patent 10540263) shows on-page factors have a strict hierarchy. The grouping below is our synthesis of POP's published findings:
 
 - **Group A (Critical):** Meta title, body content, URL, H1
 - **Group B (Important):** H2, H3, H4, anchor text of internal links
 - **Group C (Supporting):** Bold, italic, image alt text
-- **Group D (Minimal/none):** Schema (SERP features only), meta description (CTR only)
+- **Group D (Minimal / none):** Schema (SERP features only), meta description (CTR only)
 
-Prioritize accordingly — a title tag fix is worth more than an alt text fix. Keyword position within the title (beginning/middle/end) does NOT matter per POP test data — focus on inclusion and CTR appeal.
+Prioritize accordingly: a title tag fix is worth more than an alt text fix. Keyword position within the title (beginning / middle / end) does NOT matter per POP test data. Focus on inclusion and CTR appeal.
 
 **Title Tag**
 - Primary keyword in first half?
@@ -189,7 +189,7 @@ Prioritize accordingly — a title tag fix is worth more than an alt text fix. K
 - Numbered steps or comparison tables?
 - Structured so AI Overviews could cite specific sections?
 
-**Internal & External Links** (HIGH IMPACT — proven +264% impressions in SearchPilot split-tests)
+**Internal & External Links** — HIGH IMPACT. [SearchPilot split-tests](https://www.searchpilot.com/resources/case-studies/seo-split-test-lessons-increasing-internal-linking) consistently show 5-25% organic traffic uplifts from contextual internal link additions, with stronger effects for in-body contextual links than for footer or sidebar links.
 - Internal links with descriptive anchor text?
 - External links to authoritative primary sources?
 
