@@ -77,6 +77,8 @@ ln -s ~/superseo-skills/skills/*/ ~/.claude/skills/
 
 Create a new Project. Paste the content of `skills/<skill-name>/SKILL.md` into the Project's custom instructions. Each SKILL.md is self-contained — no dependencies between files.
 
+**Note on the `research/` library**: some SKILL.md files reference the `research/content-writing/` and `research/linkbuilding/` directories (for example, `write-content` loads a content-type template before writing). In Claude Desktop / Claude.ai there's no file-system access, so those references won't resolve automatically. The skills handle this with "if available" fallbacks and will still work from the in-prompt instructions alone. If you want the full research library in Desktop, paste the relevant template into the conversation manually, or switch to the Claude Code install which can load research files directly.
+
 ### Cursor
 
 Copy each skill's SKILL.md into your Cursor rules directory with the skill name as the filename:
@@ -87,6 +89,8 @@ for dir in superseo-skills/skills/*/; do
   cp "$dir/SKILL.md" .cursor/rules/"$(basename "$dir")".md
 done
 ```
+
+The same `research/` caveat applies in Cursor — rule files don't dynamically load sibling directories, so the content-writing templates and linkbuilding playbooks are reference material you'd paste in manually when needed.
 
 ### Any other agent
 
