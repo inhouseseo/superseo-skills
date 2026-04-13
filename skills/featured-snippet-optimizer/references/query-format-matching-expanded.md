@@ -26,7 +26,7 @@ Google picks a snippet format based on query shape. Write the answer in the wron
 | "Who is X" | Short paragraph, person bio format | "who is elon musk" | 2-4 sentences, usually pulled near a headshot or knowledge panel. |
 | "Who invented X" | Short paragraph | "who invented the telephone" | Name + year + one-line context. |
 | "Why does X" | Paragraph, explanation format | "why does iron rust" | 40-70 words. Causal structure: mechanism + outcome. |
-| "Why is X" | Paragraph | "why is the sky blue" | Same as "why does X". Semrush data shows 77.6% of "why" queries return a snippet — the highest question-word trigger rate. |
+| "Why is X" | Paragraph | "why is the sky blue" | Same as "why does X". "Why" question words have historically had the highest snippet trigger rate of any question word — optimize as if a snippet is available. |
 | "How much does X cost" | Table (ranges) or paragraph (single price) | "how much does a tesla cost" | Price ranges across variants → table. Single product → paragraph with the number up front. |
 | "How long does X take" | Short paragraph with specific time | "how long does a passport take" | Answer the duration in the first clause; qualify in the second. |
 | "How many X" | Short phrase, single number | "how many bones in the human body" | Sometimes just a number card. Format the answer as "There are N X" in the first sentence. |
@@ -61,7 +61,7 @@ Which query types have been absorbed by AI Overviews:
 - **"Best X" and "top X"** — these shifted almost entirely to AIO by mid-2025 because they benefit from multi-source synthesis.
 - **"Why" questions** — reason queries trigger AIO 59.8% of the time (Ahrefs), the highest rate of any category. The snippet you used to see is probably now an AIO.
 - **Comparison queries** — "X vs Y" with 3+ options or complex dimensions usually show AIO instead of a table.
-- **Long-tail informational queries** — queries with 8+ words are 7x more likely to get an AIO than a snippet.
+- **Long-tail informational queries** — the longer and more synthesis-heavy the query, the more likely AIO replaces the snippet. Rule of thumb: past 6-8 words with multiple clauses, assume AIO.
 
 Rule of thumb: if the query is longer than 6 words or demands synthesis across sources, assume AIO. If the answer fits in a tweet, the snippet is still in play.
 

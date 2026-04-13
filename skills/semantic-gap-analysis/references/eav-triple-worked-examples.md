@@ -36,7 +36,7 @@ The thin version is a pricing page. The rich version is a piece that a fintech P
 **Rich coverage (EAV):**
 - **Entity:** LASIK (Laser-Assisted In Situ Keratomileusis)
 - **Attributes:** recovery window (24–48 hours to functional vision, 3–6 months to fully stabilized), ideal candidate age range (21–40), corneal thickness requirement (~500 microns minimum), refractive error range (up to -12D myopia, +6D hyperopia, 6D astigmatism), FDA approval date (1999 for myopia), typical cost (USD 2,000–3,000 per eye in the US)
-- **Relations:** alternatives include PRK (better for thin corneas, longer recovery), SMILE (small-incision, flapless, newer), and ICL (implantable collamer lens, for extreme prescriptions); shares the femtosecond-laser flap creation step with Femto-LASIK; common complications include dry eye syndrome (~20% at 6 months), halos and starbursts at night, and rare ectasia; contraindicated for keratoconus patients and during pregnancy
+- **Relations:** alternatives include PRK (better for thin corneas, longer recovery), SMILE (small-incision, flapless, newer), and ICL (implantable collamer lens, for extreme prescriptions); shares the femtosecond-laser flap creation step with Femto-LASIK; reported side effects include dry eye symptoms, halos and starbursts at night, and rare ectasia; contraindicated for keratoconus patients and during pregnancy
 
 Notice how the relations encode medical decision-making. A reader searching "LASIK vs PRK" doesn't get served a keyword match — they get served the page that understands why you'd choose one over the other.
 

@@ -1,7 +1,7 @@
 # Technique 20: Ultimate Guide / Pillar Pages
 
 ## What It Is
-Comprehensive, long-form content that covers an entire topic in depth and serves as the central hub of a topic cluster. Captures broad head terms and establishes topical authority.
+Long-form content that covers an entire topic in depth and acts as the central hub of a topic cluster. Captures broad head terms and establishes topical authority.
 
 ## When to Use
 Informational/navigational intent -- user wants a complete overview of a broad topic. Use when building topic clusters. The pillar page links to and from all supporting content (how-tos, definitions, comparisons, FAQs).
@@ -53,7 +53,7 @@ H2: Resources and next steps
 ```
 
 ## Word Count
-3,000-5,000+ words (comprehensive but not padded -- every section earns its place)
+3,000-5,000+ words (covers the whole topic without padding -- every section earns its place)
 
 ## Schema Markup
 - **Primary:** Article (with headline, author, datePublished, dateModified)

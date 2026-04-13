@@ -6,7 +6,7 @@ The strategic question for 2026: is this a snippet-target keyword, or is it an A
 
 AI Overviews now appear on roughly 13% of all queries globally ([Ahrefs, 38% of AI Overview Citations Pull From The Top 10](https://ahrefs.com/blog/ai-overview-citations-top-10/)), with higher rates in specific verticals (Science 43.6%, Health 43.0%, People & Society 35.3%). Some studies using different metrics report AIO on 25.8% of US searches or 58% of informational queries specifically. The range reflects how you slice the data — but the direction is the same: AIO is growing and it's displacing featured snippets where the two overlap.
 
-The correlation between featured snippet decline and AIO growth is 0.9 ([Ahrefs, Goodbye Featured Snippets](https://ahrefs.com/blog/how-serp-features-have-evolved-in-the-ai-era/)). Featured snippet prevalence dropped from 15.4% of queries to 5.5% as AIO expanded through 2025. Featured snippets and AIOs rarely co-occur — Semrush data shows co-occurrence fell from 34% in March 2025 to 18% by November 2025.
+The correlation between featured snippet decline and AIO growth is 0.9 ([Ahrefs, Goodbye Featured Snippets](https://ahrefs.com/blog/how-serp-features-have-evolved-in-the-ai-era/)). Featured snippet prevalence dropped from 15.4% of queries to 5.5% as AIO expanded through 2025. Featured snippets and AIOs rarely co-occur on the same query — when Google shows one, it tends to suppress the other, and that separation has widened as AIO coverage has grown.
 
 What this means in practice: a query that used to reliably show a snippet might now show an AIO, or neither. Before rewriting, always Google the query and see what's actually there.
 
