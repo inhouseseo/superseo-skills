@@ -37,11 +37,11 @@ No exports. No pasting data. No "gather this from GSC first." Just a URL or a ke
 - **`linkbuilding`** — phase-appropriate tactics (foundation, growth, authority) from domain reading
 - **`expert-interview`** — extract first-party expertise through targeted questions, feeds into content writing
 
-### 25 content-type templates (`research/content-writing/`)
+### 23 content-type templates (`research/content-writing/`)
 
 How-to pages, definitions, comparisons, listicles, pillar pages, FAQs, statistics pages, news articles, thought leadership, product pages, category pages, landing pages, pricing pages, integration pages, service pages, location pages, case studies, about pages, programmatic pages, and more. Each includes the exact H1/H2 structure, schema markup, featured snippet strategy, word count targets, and E-E-A-T signals for that content type.
 
-Plus the writing technique library: the anti-AI-slop defense system (tiered banned vocabulary, structural pattern detection, the Horoscope Test), voice injection, E-E-A-T signal embedding, information gain writing, search intent matching, topic cluster strategy, quality scoring, structured data for SERP features.
+Plus a 16-module writing technique library in the same folder: the anti-AI-slop defense system (tiered banned vocabulary, structural pattern detection, the Horoscope Test), voice injection, E-E-A-T signal embedding, information gain writing, search intent matching, topic cluster strategy, quality scoring, structured data for SERP features, and more.
 
 ### 9 link-building tactic playbooks (`research/linkbuilding/`)
 
@@ -53,29 +53,44 @@ Entity stacking, citations and directories, competitor backlink gap, guest posti
 
 ## Quick start
 
+Each skill lives in its own folder at `skills/<skill-name>/SKILL.md`, which is the canonical Claude Code skill-discovery layout.
+
 ### Claude Code
 
+Clone the repo and copy each skill folder into your Claude Code skills directory:
+
 ```bash
-git clone https://github.com/inhouseseo/superseo-skills ~/.claude/skills/superseo-skills
+git clone https://github.com/inhouseseo/superseo-skills.git
+cp -r superseo-skills/skills/* ~/.claude/skills/
 ```
 
-Restart Claude Code. Every skill is now discoverable — ask Claude to "run a page audit on example.com" and it'll load the `page-audit` skill automatically.
+Restart Claude Code. Each skill is now auto-discoverable — ask Claude to "run a page audit on example.com" and it'll load the `page-audit` skill.
+
+Prefer a symlink so `git pull` stays live? Clone somewhere stable, then link each skill folder:
+
+```bash
+git clone https://github.com/inhouseseo/superseo-skills.git ~/superseo-skills
+ln -s ~/superseo-skills/skills/*/ ~/.claude/skills/
+```
 
 ### Claude Desktop or Claude.ai
 
-Create a new Project. Paste the content of the skill you want into the Project's custom instructions. Start a conversation. Each skill is self-contained.
+Create a new Project. Paste the content of `skills/<skill-name>/SKILL.md` into the Project's custom instructions. Each SKILL.md is self-contained — no dependencies between files.
 
 ### Cursor
 
-```bash
-git clone https://github.com/inhouseseo/superseo-skills .cursor/rules/superseo-skills
-```
+Copy each skill's SKILL.md into your Cursor rules directory with the skill name as the filename:
 
-Reference skills in your rules file with `@superseo-skills/skills/page-audit.md`.
+```bash
+git clone https://github.com/inhouseseo/superseo-skills.git
+for dir in superseo-skills/skills/*/; do
+  cp "$dir/SKILL.md" .cursor/rules/"$(basename "$dir")".md
+done
+```
 
 ### Any other agent
 
-Copy the content of any skill from `skills/` into your system prompt. Each file is a complete, standalone prompt.
+Copy the content of any `skills/<skill-name>/SKILL.md` into your system prompt. Each file is a complete, standalone prompt.
 
 ---
 
