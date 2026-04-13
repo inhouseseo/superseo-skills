@@ -185,9 +185,13 @@ If you want to do any of the above, [get in touch](mailto:hello@inhouseseo.ai) a
 
 ## Contributing
 
-Found a better framing? A tactic we missed? A CTR benchmark that's more current than ours? Open a PR. Keep skills standalone (no data exports required in the skill body), preserve the anti-slop voice rules, and include a one-line note in the PR description about what changed and why.
+Found a better framing? A tactic we missed? A CTR benchmark that's more current than ours? PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the style guide and submission flow — the short version is: take positions, be specific, cite primary sources, and pass the skills' own anti-slop audit.
 
 For issues with how a skill performs in the wild, open an issue with the exact prompt, the model, and the output.
+
+## Security
+
+This repository contains no executable code — the security surface is limited to the Markdown files a Claude agent reads when running a skill. See [SECURITY.md](SECURITY.md) for the full scope and reporting process.
 
 ---
 
