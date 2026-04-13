@@ -123,3 +123,13 @@ A simple list showing which spokes link to which other spokes. Not every spoke n
 ## Next Step
 
 For each spoke, use `content-brief` with the spoke's target keyword to produce a writer-ready brief. Then `write-content` to write the article.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them.
+
+- **`first-link-weight-evidence.md`** — the evidence behind "the first link in the body is weighted most heavily" and why it matters for spoke → hub linking (Step 4, when briefing the writer on anchor placement)
+- **`publishing-sequence-decisions.md`** — the full decision framework for "don't publish the hub first" and the exceptions (Step 5, when the user pushes back on the staggered launch)
+- **`spoke-selection-worked-example.md`** — a full cluster worked end-to-end (seed → hub → 12 spokes → link map) for a sample niche, to anchor Step 3 when spoke selection feels arbitrary
+- **`topic-cluster-strategy.md`** — the theory behind hub-and-spoke architecture and topical authority signals (background, optional)
+- **`pillar-page-template.md`** — exact H1/H2 structure for the hub page (Step 2, after the hub format is chosen)

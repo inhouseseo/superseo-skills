@@ -64,3 +64,14 @@ This document can be passed directly to `write-content` or `improve-content` as 
 ## Language
 
 Conduct the interview in the language the user responds in.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them.
+
+- **`question-bank-by-topic.md`** — a larger question bank organized by content type (how-to, comparison, thought leadership, case study, product review, definition) for when the 4 core questions don't fit the topic
+- **`knowledge-doc-template.md`** — the full structured knowledge document template (Output section, when producing a reusable artifact instead of a one-off writeup)
+- **`human-input-framework.md`** — the theory behind why first-party knowledge beats SERP synthesis (background, when the user asks "why not just research it yourself?")
+- **`information-gain-writing.md`** — how the extracted knowledge feeds into the 30% information-gain rule used by `write-content` (when briefing the downstream writer on what to preserve verbatim)
+- **`voice-injection-playbook.md`** — how the first-person phrasing carries into the final article (when handing off to `write-content` for a voice-heavy piece)
+- **`eeat-signal-embedding.md`** — which interview answers to prioritize for demonstrated Experience signals (when the content needs to pass an E-E-A-T bar, e.g., YMYL)

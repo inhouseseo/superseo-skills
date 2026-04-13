@@ -126,3 +126,14 @@ Propose 2 title tag options (max 60 chars) and 1 meta description (max 160 chars
 ## Next Step
 
 Need a full content brief to execute the ranking plan? Use `content-brief` with this keyword as context.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them.
+
+- **`ctr-benchmarks-by-position.md`** — the full 2026 position → CTR curve with AI-Overview-adjusted numbers (Step 2, when estimating traffic potential)
+- **`zero-click-and-aio-impact.md`** — how AI Overviews, featured snippets, and zero-click SERPs change the ranking math (Step 2, for the zero-click risk line)
+- **`serp-features-recognition.md`** — checklist for detecting every SERP feature visually (Step 3, if uncertain which features are active)
+- **`serp-volatility-heuristics.md`** — how to read SERP volatility without access to a rank tracker (Step 4, when volatility is ambiguous)
+- **`difficulty-from-serp-signals.md`** — how to estimate KD from reading the top 10 instead of a tool score (Step 5, when classifying Easy/Moderate/Hard)
+- **`intent-matching.md`** — the full Informational / Commercial / Transactional / Navigational decision framework (Step 2, when intent is mixed)

@@ -275,3 +275,12 @@ Five changes that require more work but create the biggest competitive advantage
 ## Note on traffic weighting
 
 Without GSC data, the audit can't say "this problem is urgent because this page gets 50k monthly impressions." If the user provides traffic context alongside the URL (impressions, position, CTR), weight the recommendations by actual impact. Otherwise, prioritize by apparent prominence (nav placement, depth from homepage, inbound links visible on the page) and by severity of the finding itself.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them — don't preload the whole folder.
+
+- **`pop-test-hierarchy.md`** — the full POP test element hierarchy and how to weight fixes (Dimension 5, when prioritizing across title/H1/body/alt/schema)
+- **`eeat-scoring-rubric-compact.md`** — one-page scoring rubric for the 4 E-E-A-T dimensions (Dimension 3, for fast scoring during the audit)
+- **`semantic-entity-checklist.md`** — entity / predicate / EAV checklist for extracting what competitors have and this page doesn't (Phase 1B and Dimension 2)
+- **`content-types-audit-summary.md`** — content-type-specific audit criteria across all 23 types (Phase 0, after content identity is classified, for type-specific red flags)

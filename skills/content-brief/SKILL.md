@@ -47,7 +47,7 @@ If PAA questions appear for this keyword, write them down verbatim. They'll beco
 
 Pick the content type from the SERP pattern. Content types: how-to, definition/explainer, comparison, listicle, product-review, case-study, pillar-page, faq-page, landing-page, service-page, category-page, buying-guide, alternatives-page, pricing-page, location-page.
 
-If you have access to the content templates in `research/content-writing/` of this repo, load the matching template for H1/H2/H3 structure, schema markup, featured snippet format, CTA placement.
+Load `references/content-types-overview.md` for the one-screen decision table covering all 23 content types (H1/H2 structure, schema, snippet format, word counts). Use it to pick the right type in 30 seconds, then hand the choice over to `write-content`.
 
 ## Step 5: Produce the Brief
 
@@ -101,3 +101,14 @@ H1 and H2/H3 structure aligned to search intent and the gap analysis. Include:
 ## Next Step
 
 Brief ready? Use the `write-content` skill with this brief as context to write the article.
+
+## Bundled references
+
+Load these from `references/` only when the step calls for them — don't preload.
+
+- **`content-types-overview.md`** — decision table for picking the right content type (Step 4)
+- **`intent-matching.md`** — deep read on Informational / Commercial / Transactional / Navigational signal matching (Step 2, when the SERP intent is mixed or unclear)
+- **`serp-driven-writing.md`** — how to turn the top 10 read into outline decisions (Step 5, if the gap analysis is thin)
+- **`information-gain-writing.md`** — what qualifies as "new information" vs. index (Step 5, when briefing the unique angle)
+- **`structured-data-snippets.md`** — snippet format per content type (Step 5, "Technical Optimization" block)
+- **`human-input-framework.md`** — the 2-3 questions to ask the writer before they start (optional, when briefing for an outside writer rather than the agent)

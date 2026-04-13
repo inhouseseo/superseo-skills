@@ -1,11 +1,11 @@
 ---
 name: linkbuilding
-description: Use when planning link acquisition. Classifies the site's authority phase from site age and visible signals, then recommends phase-appropriate tactics from the research/linkbuilding/ playbook library. No backlink tool required.
+description: Use when planning link acquisition. Classifies the site's authority phase from site age and visible signals, then recommends phase-appropriate tactics from the bundled tactic playbook library. No backlink tool required.
 ---
 
 # Link Building
 
-A phase-appropriate link acquisition strategy with specific, executable tactics. The agent classifies your site's authority phase from what it can read (the domain, site age, what's on the homepage), then picks tactics from the 9 detailed playbooks in `research/linkbuilding/` of this repo.
+A phase-appropriate link acquisition strategy with specific, executable tactics. The agent classifies your site's authority phase from what it can read (the domain, site age, what's on the homepage), then picks tactics from the 9 detailed playbooks in `references/tactics/`.
 
 ## Input
 
@@ -38,32 +38,32 @@ Classify the phase:
 - **Growth phase**: 1-3 years, 20-100 pages of content, some brand mentions, likely DR 16-40
 - **Authority phase**: 3+ years, established brand, knowledge panel, media mentions, likely DR 41+
 
-State your reasoning. If you can't tell with confidence, ask the user one question to confirm.
+State your reasoning. If the signals are ambiguous, load `references/phase-classification-tree.md` for the full decision tree before falling back on asking the user.
 
 ## Step 2: Phase-Appropriate Tactics
 
-Before giving execution instructions for any tactic, load its full playbook from `research/linkbuilding/tactic-NN-[slug].md`. The tactics below are the ones available in this repo:
+Before giving execution instructions for any tactic, load its full playbook from `references/tactics/<slug>.md`. The 9 tactics bundled in this repo:
 
 ### Foundation phase (do first)
 
-- **Entity stacking** (tactic-01) — Consistent brand presence on 20+ platforms (Google Business, LinkedIn, Crunchbase, Medium, GitHub, Wikidata). Expected: 20-30 referring domains month 1. The Wikidata entry is highest-leverage for entity recognition.
-- **Citations and directories** (tactic-02) — Industry and local directories. Chamber of Commerce links are DR 50-70, dofollow.
+- **Entity stacking** (`entity-stacking.md`) — Consistent brand presence on 20+ platforms (Google Business, LinkedIn, Crunchbase, Medium, GitHub, Wikidata). Expected: 20-30 referring domains month 1. The Wikidata entry is highest-leverage for entity recognition.
+- **Citations and directories** (`citations-directories.md`) — Industry and local directories. Chamber of Commerce links are DR 50-70, dofollow.
 
 ### Growth phase (next)
 
-- **Competitor backlink gap** (tactic-04) — Requires a backlink tool (Ahrefs/Moz). Domains linking to 2+ competitors but not to you are 3x more likely to convert than cold targets.
-- **Guest posting** (tactic-06) — Target DR 30+ sites with real traffic. Contextual in-article links are worth 5-10x more than bio links.
-- **Resource pages** (tactic-09) — Search `intitle:resources [niche]`. University pages (DR 70-90+) are gold. Pitch as gap-filler.
-- **Skyscraper technique** (tactic-12) — Find the most-linked content in your niche, create something 10x better, reach out to everyone who linked to the original.
+- **Competitor backlink gap** (`competitor-backlink-gap.md`) — Requires a backlink tool (Ahrefs/Moz). Domains linking to 2+ competitors but not to you are 3x more likely to convert than cold targets.
+- **Guest posting** (`guest-posting.md`) — Target DR 30+ sites with real traffic. Contextual in-article links are worth 5-10x more than bio links.
+- **Resource pages** (`resource-pages.md`) — Search `intitle:resources [niche]`. University pages (DR 70-90+) are gold. Pitch as gap-filler.
+- **Skyscraper technique** (`skyscraper-technique.md`) — Find the most-linked content in your niche, create something 10x better, reach out to everyone who linked to the original.
 
 ### Authority phase (scale)
 
-- **Strategic partnerships** (tactic-14) — Joint research, co-authored guides, integration pages. Integration page links are permanent and high-authority.
-- **Podcast guesting** (tactic-15) — Target shows in your niche with 1,000-10,000 listeners (the sweet spot — not saturated, not tiny). Host links in show notes are dofollow and high-authority.
+- **Strategic partnerships** (`strategic-partnerships.md`) — Joint research, co-authored guides, integration pages. Integration page links are permanent and high-authority.
+- **Podcast guesting** (`podcast-guesting.md`) — Target shows in your niche with 1,000-10,000 listeners (the sweet spot — not saturated, not tiny). Host links in show notes are dofollow and high-authority.
 
 ### New site strategy
 
-- **New site launch** (tactic-18) — The full 0-to-100 foundation playbook for a brand-new domain. Combines entity stacking, citations, first content, and realistic velocity.
+- **New site launch** (`new-site-launch-strategy.md`) — The full 0-to-100 foundation playbook for a brand-new domain. Combines entity stacking, citations, first content, and realistic velocity.
 
 ## Step 3: Anchor Text Safety
 
@@ -74,7 +74,7 @@ If the user can share anchor text distribution (from any backlink tool), compare
 - **Partial match**: 10-15%
 - **Exact match**: 3-5% MAX — over 5% is a penalty risk
 
-If exact match > 5%: recommend branded/generic anchors for next 10-15 links before any outreach.
+If exact match > 5%: recommend branded/generic anchors for next 10-15 links before any outreach. For the full safety framework (why these ranges, what Penguin actually looks at, recovery playbook), load `references/anchor-text-safety-guide.md`.
 
 If they can't share this data, skip this step.
 
@@ -92,7 +92,7 @@ Matched to the phase. For each: tactic name, why it fits this phase, expected re
 - Months 4-6: 8-15
 - Month 7+: 10-30
 
-Red flags: 50+ in one month, all from the same country, spike in exact-match anchors.
+Red flags: 50+ in one month, all from the same country, spike in exact-match anchors. Load `references/link-velocity-redflags.md` for the full red-flag catalog and SpamBrain detection patterns when diagnosing a velocity penalty.
 
 ## What to Ignore
 
@@ -103,3 +103,15 @@ Red flags: 50+ in one month, all from the same country, spike in exact-match anc
 ## Next Step
 
 Once foundation links are built, a keyword deep dive on your biggest opportunity keyword will show which pages would benefit most from the new link equity.
+
+## Bundled references
+
+Load from `references/` only when the step or situation calls for them.
+
+**Tactic playbooks** (`references/tactics/`) — load one before giving execution instructions for that tactic in Step 2:
+- `entity-stacking.md`, `citations-directories.md`, `competitor-backlink-gap.md`, `guest-posting.md`, `resource-pages.md`, `skyscraper-technique.md`, `strategic-partnerships.md`, `podcast-guesting.md`, `new-site-launch-strategy.md`
+
+**Diagnostic and safety references** (`references/`):
+- `phase-classification-tree.md` — decision tree when Step 1 signals are ambiguous
+- `anchor-text-safety-guide.md` — full anchor safety framework and penalty recovery (Step 3)
+- `link-velocity-redflags.md` — velocity red flags and SpamBrain patterns (diagnosing a traffic drop that looks link-related)
