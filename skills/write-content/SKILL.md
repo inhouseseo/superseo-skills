@@ -52,7 +52,7 @@ State it plainly:
 
 Wait for confirmation.
 
-Load `references/content-types-overview.md` for the decision table covering all 23 content types. Then load the specific template from `references/content-types/<type>.md` (e.g., `references/content-types/how-to.md`) for H1/H2 structure, schema, featured snippet format, CTA placement, word count targets. The 9 content types bundled inline are: how-to, definition, comparison, listicle, pillar-page, faq-page, landing-page, service-page, case-study. For any other type, use the overview table's structural guidance.
+Load `references/content-types-overview.md` for the decision table covering all 23 content types. Then load the specific template from `references/content-types/<type>.md` (e.g., `references/content-types/how-to.md`) for H1/H2 structure, schema, featured snippet format, CTA placement, word count targets. The 19 content types bundled as full templates: how-to, definition, comparison, listicle, pillar-page, faq-page, landing-page, service-page, case-study, statistics-page, news-article, glossary-page, alternatives-page, buying-guide, product-page, category-page, integration-page, location-page, programmatic-page. For the 4 types covered only by the overview table (thought-leadership, product-reviews, pricing-pages, about-pages), those live under `eeat-audit/references/content-types/` because the E-E-A-T bar for them is the load-bearing factor.
 
 ## Phase 3: Knowledge Extraction
 
@@ -155,8 +155,10 @@ Write in the language from the business context. If not specified, match the lan
 Load from `references/` only when the step or rule calls for them. Don't preload — each file is heavy enough to blow context if stacked.
 
 **Content type templates** (`references/content-types/`) — load one after Phase 2:
-- `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
-- `references/content-types-overview.md` for the decision table across all 23 content types
+- Common: `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
+- Content and news: `statistics-page.md`, `news-article.md`, `glossary-page.md`
+- Commercial: `alternatives-page.md`, `buying-guide.md`, `product-page.md`, `category-page.md`, `integration-page.md`, `location-page.md`, `programmatic-page.md`
+- `references/content-types-overview.md` for the decision table across all 23 content types (load this FIRST if unsure which type to pick)
 
 **Writing technique modules** (`references/`) — load when the matching Phase 4 rule needs more depth:
 - `anti-slop-ruleset.md` — full tiered banned vocab + structural tell list (when the inline anti-slop block isn't catching something)

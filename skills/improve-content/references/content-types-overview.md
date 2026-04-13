@@ -1,6 +1,6 @@
 # Content Types Overview
 
-Quick-reference index covering all 23 content-type templates. Use this file to pick the right content type for a SERP, check its target word count, dominant schema, snippet format, and H1/H2 skeleton without loading the full per-type file. Load the individual `technique-XX.md` only when you need the depth (process detail, anti-AI focus, common mistakes, example topics).
+Quick-reference index covering all 23 content-type templates. Use this file to pick the right content type for a SERP, check its target word count, dominant schema, snippet format, and H1/H2 skeleton without loading the full per-type file. Load the individual `content-types/<type>.md` only when you need the depth (process detail, anti-AI focus, common mistakes, example topics).
 
 ## Decision table
 
@@ -71,7 +71,7 @@ A few more overlaps worth flagging. Integration pages and category pages both st
 
 ## When to load the full per-type file
 
-The decision table gives you enough to pick the type and draft the skeleton. Load the full `technique-XX.md` when:
+The decision table gives you enough to pick the type and draft the skeleton. Load the full `content-types/<type>.md` when:
 
 - **pillar-page**: you need the hub-and-spoke linking architecture, the visual-break rhythm (image/table every 300-500 words), and the regular-update cadence rules. The overview doesn't capture the "every cluster article links back" rule, which is the whole point of the pattern.
 - **comparison**: you need the full 10-section framework, especially the "verdict first per criterion" rule at the H3 level. Comparison articles fail hard if you just know the H2 skeleton.

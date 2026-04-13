@@ -62,7 +62,7 @@ Primary keyword in H1, first 100 words, 2-3 H2s. ~2% density, naturally distribu
 
 ### Content type
 
-Detect from the existing page + SERP. Load `references/content-types-overview.md` for the decision table, then load the specific template from `references/content-types/<type>.md` for the full rewrite structure. Bundled templates: how-to, definition, comparison, listicle, pillar-page, faq-page, landing-page, service-page, case-study.
+Detect from the existing page + SERP. Load `references/content-types-overview.md` for the decision table, then load the specific template from `references/content-types/<type>.md` for the full rewrite structure. 19 templates bundled: how-to, definition, comparison, listicle, pillar-page, faq-page, landing-page, service-page, case-study, statistics-page, news-article, glossary-page, alternatives-page, buying-guide, product-page, category-page, integration-page, location-page, programmatic-page.
 
 - **How-to**: 40-60 word quick answer, then numbered steps with "what goes wrong"
 - **Comparison**: verdict first, then detail
@@ -84,8 +84,10 @@ Write in the same language as the existing page content.
 Load from `references/` only when needed — don't preload the whole folder.
 
 **Content type templates** (`references/content-types/`) — load one in Step 4:
-- `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
-- `references/content-types-overview.md` for the decision table across all 23 content types
+- Common: `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
+- Content and news: `statistics-page.md`, `news-article.md`, `glossary-page.md`
+- Commercial: `alternatives-page.md`, `buying-guide.md`, `product-page.md`, `category-page.md`, `integration-page.md`, `location-page.md`, `programmatic-page.md`
+- `references/content-types-overview.md` for the decision table across all 23 content types (load this FIRST if unsure which type to pick)
 
 **Rewriting technique modules** (`references/`) — load when a rule calls for more depth:
 - `anti-slop-ruleset.md` — full tiered banned vocab + structural tells (load when the inline anti-slop block isn't catching everything in the current page)
