@@ -1,8 +1,37 @@
-# SuperSEO Skills: Opinionated Claude Skills for SEO
+# superseo-skills
 
-**11 Claude skills for SEO encoding the methodology I actually trust: Koray Tuğberk GÜBÜR on semantic networks, Kyle Roof's POP test priorities, Lily Ray on demonstrated E-E-A-T, and the Information Gain patent research. Plus a generation-time anti-AI-slop ruleset that's not a humanizer. Production-tested at [InhouseSEO](https://inhouseseo.ai), open-sourced today.**
+### Hand Claude a URL. 30 seconds later you have a 7-dimension SEO audit, 3 competitor reads, and a rewritten title tag.
 
-Drop these into Claude (Code, Desktop, or the app), Cursor, or any agent that reads markdown. Give the agent a URL or a keyword and it does the work: fetches the page, Googles competitors, reads the top 3 results, runs the analysis.
+*No exports. No API keys. No paste-in data. The agent fetches everything itself.*
+
+[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-One--command_install-7c3aed?logo=anthropic&logoColor=white)](#install-in-30-seconds)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+&nbsp;&nbsp;⭐ **Star this if you ship SEO work.**
+
+![superseo-skills page-audit running in real Claude Code on backlinko.com/title-tags](demo/page-audit-demo.gif)
+
+<sub>↑ Real Claude Code session, 1m 3s. Cast: [`demo/page-audit-real.cast`](demo/page-audit-real.cast).</sub>
+
+**Vanilla Claude vs `page-audit`:**
+
+| | Vanilla Claude prompt | superseo `page-audit` |
+|---|---|---|
+| Input | "audit this page for SEO" | URL |
+| Competitor research | Hallucinates word counts | Fetches & reads top 3, end-to-end |
+| 404 / dead links | Audits the error page | Catches it, finds the canonical |
+| Output | Generic checklist | Named competitors, char-counted rewrites, 1–10 per dimension |
+| Methodology | Vibes | POP test · Information Gain · E-E-A-T · semantic networks |
+
+**11 skills in this repo:** `page-audit` · `content-brief` · `write-content` · `improve-content` · `keyword-deep-dive` · `semantic-gap-analysis` · `eeat-audit` · `topic-cluster-planning` · `featured-snippet-optimizer` · `linkbuilding` · `expert-interview`. Every skill works the same way: one input, the agent does the research itself.
+
+## Install in 30 seconds
+
+```bash
+/plugin marketplace add inhouseseo/superseo-skills
+/plugin install superseo@superseo-skills
+```
+
+Then in Claude: `run page-audit on <your URL>`. Other surfaces (Claude Desktop, Claude.ai, Cursor, any agent) → [Quick start](#quick-start) below.
 
 ---
 
