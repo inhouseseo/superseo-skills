@@ -37,15 +37,19 @@ No exports. No pasting data. No "gather this from GSC first." Just a URL or a ke
 - **`linkbuilding`** — phase-appropriate tactics (foundation, growth, authority) from domain reading
 - **`expert-interview`** — extract first-party expertise through targeted questions, feeds into content writing
 
-### 23 content-type templates (`research/content-writing/`)
+### Per-skill bundled references (`skills/<name>/references/`)
 
-How-to pages, definitions, comparisons, listicles, pillar pages, FAQs, statistics pages, news articles, thought leadership, product pages, category pages, landing pages, pricing pages, integration pages, service pages, location pages, case studies, about pages, programmatic pages, and more. Each includes the exact H1/H2 structure, schema markup, featured snippet strategy, word count targets, and E-E-A-T signals for that content type.
+Every skill ships with its own `references/` folder containing the deeper material the skill pulls from on demand. No separate research library to install or paste — it's already bundled with each skill.
 
-Plus a 16-module writing technique library in the same folder: the anti-AI-slop defense system (tiered banned vocabulary, structural pattern detection, the Horoscope Test), voice injection, E-E-A-T signal embedding, information gain writing, search intent matching, topic cluster strategy, quality scoring, structured data for SERP features, and more.
+- **Content-type templates** (23 types total, distributed across `write-content`, `improve-content`, `content-brief`, `eeat-audit`, `featured-snippet-optimizer`): how-to, definition, comparison, listicle, pillar page, FAQ, landing page, service page, case study, thought leadership, product review, pricing page, about page, and more. Each includes the exact H1/H2 structure, schema markup, featured snippet strategy, word count targets, and E-E-A-T signals for that content type. A `content-types-overview.md` decision table covers all 23 in one place.
 
-### 9 link-building tactic playbooks (`research/linkbuilding/`)
+- **Writing technique modules** (in `write-content`, `improve-content`, `expert-interview`, and domain-specific skills): the anti-AI-slop defense system (tiered banned vocabulary, structural pattern detection, the Horoscope Test), voice injection, E-E-A-T signal embedding, information gain writing, search intent matching, topic cluster strategy, quality scoring, structured data for SERP features, and more.
 
-Entity stacking, citations and directories, competitor backlink gap, guest posting, resource pages, skyscraper technique, strategic partnerships, podcast guesting, and a new-site launch strategy. Each has step-by-step execution, common mistakes, and realistic conversion rates from the field.
+- **Skill-specific diagnostic references**: POP test hierarchy and content-types audit summary in `page-audit`, CTR benchmarks and SERP volatility heuristics in `keyword-deep-dive`, EAV triple worked examples in `semantic-gap-analysis`, YMYL scoring and fastest-wins in `eeat-audit`, first-link-weight evidence in `topic-cluster-planning`, snippet format templates in `featured-snippet-optimizer`, and a question bank organized by content type in `expert-interview`.
+
+### 9 link-building tactic playbooks (`skills/linkbuilding/references/tactics/`)
+
+Entity stacking, citations and directories, competitor backlink gap, guest posting, resource pages, skyscraper technique, strategic partnerships, podcast guesting, and a new-site launch strategy. Each has step-by-step execution, common mistakes, and realistic conversion rates from the field. Plus three top-level safety references in `skills/linkbuilding/references/`: phase classification tree, anchor text safety guide, and link velocity red flags.
 
 **9 more link-building playbooks live in the InhouseSEO platform** — the highest-conversion and most-underutilized tactics (link reclamation, existing relationships, testimonial building, broken link building, reactive and proactive digital PR, linkable assets, niche edits, ego bait). See the "What you get with InhouseSEO" section below.
 
@@ -53,18 +57,29 @@ Entity stacking, citations and directories, competitor backlink gap, guest posti
 
 ## Quick start
 
-Each skill lives in its own folder at `skills/<skill-name>/SKILL.md`, which is the canonical Claude Code skill-discovery layout.
+Each skill lives in its own folder at `skills/<skill-name>/SKILL.md` with a bundled `references/` subfolder for heavy reference material the agent can load on demand. This is the canonical Claude Code skill-discovery layout, and it's what makes the skills work identically in Claude Code, Claude Desktop, the Claude.ai app, and Cursor — no separate paste step for content-type templates or tactic playbooks.
 
-### Claude Code
+### Claude Code (plugin marketplace — recommended)
 
-Clone the repo and copy each skill folder into your Claude Code skills directory:
+One command installs all 11 skills at once via the plugin system:
+
+```bash
+/plugin marketplace add inhouseseo/superseo-skills
+/plugin install superseo@superseo-skills
+```
+
+That's it. Every skill is now auto-discoverable (`page-audit`, `content-brief`, etc.) and each skill's `references/` folder comes with it. Updates: `/plugin marketplace update superseo-skills`.
+
+### Claude Code (manual, if you prefer)
+
+Clone the repo and copy each skill folder into your skills directory. Because the `references/` live inside each skill folder, the copy brings the full reference library with it automatically.
 
 ```bash
 git clone https://github.com/inhouseseo/superseo-skills.git
 cp -r superseo-skills/skills/* ~/.claude/skills/
 ```
 
-Restart Claude Code. Each skill is now auto-discoverable — ask Claude to "run a page audit on example.com" and it'll load the `page-audit` skill.
+Restart Claude Code. Ask Claude to "run a page audit on example.com" and it'll load the `page-audit` skill.
 
 Prefer a symlink so `git pull` stays live? Clone somewhere stable, then link each skill folder:
 
@@ -73,15 +88,15 @@ git clone https://github.com/inhouseseo/superseo-skills.git ~/superseo-skills
 ln -s ~/superseo-skills/skills/*/ ~/.claude/skills/
 ```
 
-### Claude Desktop or Claude.ai
+### Claude.ai, Claude Desktop, and Claude mobile
 
-Create a new Project. Paste the content of `skills/<skill-name>/SKILL.md` into the Project's custom instructions. Each SKILL.md is self-contained — no dependencies between files.
+Custom skill uploads via **Settings → Features → Skills → +**. Pro plan or above. One skill per upload — Claude.ai's skill UI is one-at-a-time, so grab the skill you want from the [Releases page](https://github.com/inhouseseo/superseo-skills/releases) (`page-audit.zip`, `write-content.zip`, etc.) and upload it. Each zip is a complete skill including its bundled `references/`, and progressive disclosure works the same way it does in Claude Code. Skills don't sync across surfaces, so upload per account and per device.
 
-**Note on the `research/` library**: some SKILL.md files reference the `research/content-writing/` and `research/linkbuilding/` directories (for example, `write-content` loads a content-type template before writing). In Claude Desktop / Claude.ai there's no file-system access, so those references won't resolve automatically. The skills handle this with "if available" fallbacks and will still work from the in-prompt instructions alone. If you want the full research library in Desktop, paste the relevant template into the conversation manually, or switch to the Claude Code install which can load research files directly.
+If you want all 11 skills in one command, use the Claude Code plugin install above — that's the fastest path for the full pack.
 
 ### Cursor
 
-Copy each skill's SKILL.md into your Cursor rules directory with the skill name as the filename:
+Copy each skill's SKILL.md into your Cursor rules directory:
 
 ```bash
 git clone https://github.com/inhouseseo/superseo-skills.git
@@ -90,11 +105,11 @@ for dir in superseo-skills/skills/*/; do
 done
 ```
 
-The same `research/` caveat applies in Cursor — rule files don't dynamically load sibling directories, so the content-writing templates and linkbuilding playbooks are reference material you'd paste in manually when needed.
+Cursor rule files are static prompts, so the agent can't dynamically load sibling directories. Paste a `references/` file into the conversation when the skill calls for one, or keep the repo open in a second Cursor workspace for the agent to grep.
 
 ### Any other agent
 
-Copy the content of any `skills/<skill-name>/SKILL.md` into your system prompt. Each file is a complete, standalone prompt.
+Copy the content of any `skills/<skill-name>/SKILL.md` into your system prompt. Each file is a complete, standalone prompt — the bundled references are optional depth the agent loads from `skills/<name>/references/` when a step asks for them.
 
 ---
 

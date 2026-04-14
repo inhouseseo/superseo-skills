@@ -139,3 +139,17 @@ Google's snippet extractor looks at this structure specifically. The answer bloc
 ## Next Step
 
 For a full content rewrite where the snippet is just one goal: use `improve-content` with your URL.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them.
+
+- **`query-format-matching-expanded.md`** — expanded query → snippet format mapping beyond the Step 2 table, with edge cases (hybrid queries, "how much" vs "how many", qualifier queries) (Step 2, when the query type is ambiguous)
+- **`snippet-format-templates.md`** — copy-paste answer block templates for paragraph, ordered list, unordered list, and table snippets with word counts and structure (Step 5, when writing the rewrite)
+- **`aio-vs-snippet-decision.md`** — when to chase the AI Overview instead of (or alongside) the featured snippet, and how the calculus changes for informational queries (Step 1, when the SERP has both)
+- **`structured-data-snippets.md`** — schema markup that helps rich results even though it doesn't help featured snippets directly (optional, when the user wants both)
+
+**Snippet-friendly content type templates** (`references/content-types/`) — load the matching one when the rewrite scope expands from answer block to full section:
+- `how-to.md` — for ordered list snippets
+- `faq-page.md` — for paragraph snippet stacks from PAA
+- `comparison.md` — for table snippets

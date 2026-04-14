@@ -105,3 +105,12 @@ Specific sections to add or expand, in order of priority. Each with: section hea
 ## Next Step
 
 Turn the content addition plan into an actual rewrite: use the `improve-content` skill with your page URL as input, and paste the gap list as context.
+
+## Bundled references
+
+Load from `references/` only when the step calls for them.
+
+- **`eav-triple-worked-examples.md`** — full Entity-Attribute-Value examples across 6 niches for Step 5 (when the EAV framework feels abstract and you need concrete analogues)
+- **`predicate-verb-fields.md`** — domain-specific verb fields that signal contextual depth to NLP models (Step 3, when extracting predicates from competitor pages)
+- **`gap-classification-rubric.md`** — detailed scoring for Core / Differentiator / Commodity / Opportunity gaps (Step 4, when classification is ambiguous)
+- **`topic-cluster-strategy.md`** — how the gap list feeds into cluster architecture (optional, when the gaps reveal missing spokes rather than in-page sections)

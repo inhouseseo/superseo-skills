@@ -1,0 +1,49 @@
+{
+  "name": "superseo-skills",
+  "owner": {
+    "name": "InhouseSEO",
+    "url": "https://inhouseseo.ai"
+  },
+  "metadata": {
+    "description": "Opinionated Claude skills for SEO: page audits, content briefs, article writing with anti-AI-slop rules, E-E-A-T audits, semantic gap analysis, topic clusters, featured snippet optimization, link building, and expert interviews. Methodology from Koray Tuğberk, Kyle Roof, and Lily Ray. Production-tested at InhouseSEO.",
+    "version": "0.2.0",
+    "repository": "https://github.com/inhouseseo/superseo-skills"
+  },
+  "plugins": [
+    {
+      "name": "superseo",
+      "source": "./",
+      "strict": false,
+      "description": "11 opinionated Claude skills for SEO with bundled references per skill. Canonical per-skill folder layout (SKILL.md + references/) for native Claude Code, Claude Desktop, Cursor, and Claude Cowork discovery. Includes 23 content-type templates, 16 writing technique modules, 9 link-building tactic playbooks, anti-AI-slop ruleset, E-E-A-T scoring rubrics, POP test hierarchy, EAV semantic analysis, and AI Overview impact research.",
+      "version": "0.2.0",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "claude-seo",
+        "ai-seo",
+        "seo-skills",
+        "claude-skills",
+        "content-marketing",
+        "link-building",
+        "anti-ai-slop",
+        "eeat",
+        "semantic-seo",
+        "search-engine-optimization",
+        "prompt-engineering"
+      ],
+      "skills": [
+        "./skills/page-audit",
+        "./skills/content-brief",
+        "./skills/write-content",
+        "./skills/improve-content",
+        "./skills/keyword-deep-dive",
+        "./skills/semantic-gap-analysis",
+        "./skills/eeat-audit",
+        "./skills/topic-cluster-planning",
+        "./skills/featured-snippet-optimizer",
+        "./skills/linkbuilding",
+        "./skills/expert-interview"
+      ]
+    }
+  ]
+}

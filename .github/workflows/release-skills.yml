@@ -1,0 +1,68 @@
+name: Release per-skill zips
+
+# Builds one zip per skill from the `skills/` directory and attaches them as
+# GitHub release assets. The zips are what Claude.ai / Claude Desktop / Claude
+# mobile users upload via Settings → Features → Skills → + button. The per-skill
+# folder layout (SKILL.md + references/) is already compatible with that upload
+# flow — this workflow just saves users the step of cloning the repo and zipping
+# a folder themselves.
+#
+# Triggers:
+#   - On a published GitHub release: builds zips and attaches to that release
+#   - Manually via workflow_dispatch: pass the tag of an existing release to
+#     rebuild and re-attach (the tag must already exist)
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Existing release tag to attach zips to (e.g. v0.2.0)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build one zip per skill
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          for dir in skills/*/; do
+            skill_name="$(basename "$dir")"
+            # cd into skills/ so the zip contains a single top-level
+            # <skill_name>/ folder (what Claude.ai's + upload flow expects).
+            (cd skills && zip -r "../dist/${skill_name}.zip" "$skill_name" -x "**/.DS_Store")
+          done
+          ls -lh dist/
+
+      - name: Verify each zip contains SKILL.md at the expected path
+        run: |
+          set -euo pipefail
+          fail=0
+          for zip in dist/*.zip; do
+            skill_name="$(basename "$zip" .zip)"
+            if unzip -l "$zip" | grep -q "${skill_name}/SKILL.md$"; then
+              echo "OK  $zip → ${skill_name}/SKILL.md"
+            else
+              echo "BAD $zip is missing ${skill_name}/SKILL.md"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Upload zips to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.release_tag }}
+        run: |
+          set -euo pipefail
+          echo "Attaching $(ls dist/*.zip | wc -l) zips to release ${RELEASE_TAG}"
+          gh release upload "${RELEASE_TAG}" dist/*.zip --clobber

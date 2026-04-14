@@ -96,7 +96,7 @@ Listicle roundups are one of the most commonly AI-generated content types becaus
 - **Include specific, dated observations.** "As of February 2026, Provider X's onboarding flow takes 4 steps and about 3 minutes" -- this level of specificity signals hands-on experience.
 - **Show why items are ranked in this order.** Do not just list features; explain the trade-offs that led to your ranking. "We ranked Y above Z despite Z's lower price because Y's customer support resolved issues in under an hour during our testing."
 - **Include items you intentionally excluded and why.** "We considered Provider W but excluded it because their pricing changed mid-review and the new terms were not competitive." This editorial judgment is distinctly human.
-- **Add personal recommendations per reader profile.** "If you are a freelancer working from home, our #4 pick is actually better for you than our #1" -- this nuanced guidance requires real understanding of the products and the audience.
+- **Add personal recommendations per reader profile.** "If you are a freelancer working from home, our #4 pick is actually better for you than our #1" -- this kind of specific advice requires real understanding of the products and the audience.
 
 ## Example Topics by Niche
 - Energy: "Beste energieleveranciers 2026: top 10 op prijs, service en duurzaamheid"
