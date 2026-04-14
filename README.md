@@ -8,9 +8,11 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 &nbsp;&nbsp;⭐ **Star this if you ship SEO work.** It's the only place these 11 skills live.
 
-![superseo-skills page-audit running on backlinko.com/title-tags](demo/page-audit-demo.gif)
+![superseo-skills page-audit running in real Claude Code on backlinko.com/title-tags](demo/page-audit-demo.gif)
 
-> **Real run on `backlinko.com/title-tags`.** We fed it a stale URL (`/hub/seo/title-tag`). The skill caught the 404, found the canonical page, fetched 3 named competitors, and surfaced what no checklist would: *Backlinko's own 11.8M-result study is buried in a sentence on its own title-tag page, while Ahrefs out-quotes them with a 68.54% rewrite stat. Zero mention of AI Overviews while Semrush has moved the category there.* That's a senior strategist's audit, generated unprompted from one URL.
+<sub>↑ Unedited Claude Code session. Real TUI, real tool calls, real audit. Cooked in 1m 3s. The asciinema cast is checked in at [`demo/page-audit-real.cast`](demo/page-audit-real.cast). Replay it yourself with `agg --speed 4 --idle-time-limit 0.5 --font-size 20 --theme monokai demo/page-audit-real.cast out.gif`.</sub>
+
+> **What the skill caught.** Loaded `superseo:page-audit`, fetched `backlinko.com/title-tags`, googled the keyword, then fetched and read three named competitors (Semrush, Yoast, Search Engine Land) end-to-end. Surfaced what a checklist would miss: *Backlinko teaches title tags by character count while Yoast leads with pixel width. Zero mention of AI Overviews while Semrush owns that gap.* Plus a rewritten title tag with character count. One URL in, a senior strategist's audit out, in 63 seconds.
 
 **Vanilla Claude vs `page-audit`:**
 

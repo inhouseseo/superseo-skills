@@ -1,0 +1,24 @@
+#!/usr/bin/env expect -f
+# Drives an interactive Claude Code session that runs the superseo:page-audit
+# skill against backlinko.com/title-tags. asciinema records the full TUI.
+# Run via: asciinema rec --window-size 120x32 --command "demo/run-real-audit.exp" demo/real-claude.cast
+
+set timeout 720
+log_user 1
+
+spawn claude --dangerously-skip-permissions
+sleep 5
+
+send "Use the superseo:page-audit skill on https://backlinko.com/title-tags. Be thorough: fetch the page, google the keyword, read the top 3 competitors end-to-end, run the full 7-dimension audit with rewritten title and meta.\r"
+
+expect {
+    -re "(STRATEGIC IMPROVEMENTS|REWRITTEN ELEMENTS|Quality Gate)" { sleep 6 }
+    timeout { puts "TIMEOUT waiting for audit completion" }
+}
+
+sleep 2
+send "\x03"
+sleep 0.4
+send "\x03"
+sleep 1
+expect eof

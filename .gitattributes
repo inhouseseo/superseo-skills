@@ -1,0 +1,6 @@
+# Files excluded from `git archive` (and therefore from any tarball/zip
+# packaging that uses it). The plugin marketplace already loads only the
+# skills listed in .claude-plugin/marketplace.json, so demo/ never reaches
+# the model context — this just keeps it out of release tarballs too.
+demo/                       export-ignore
+.gitattributes              export-ignore
