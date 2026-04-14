@@ -11,8 +11,9 @@
   },
   "plugins": [
     {
-      "name": "superseo-skills",
+      "name": "superseo",
       "source": "./",
+      "strict": false,
       "description": "11 opinionated Claude skills for SEO with bundled references per skill. Canonical per-skill folder layout (SKILL.md + references/) for native Claude Code, Claude Desktop, Cursor, and Claude Cowork discovery. Includes 23 content-type templates, 16 writing technique modules, 9 link-building tactic playbooks, anti-AI-slop ruleset, E-E-A-T scoring rubrics, POP test hierarchy, EAV semantic analysis, and AI Overview impact research.",
       "version": "0.2.0",
       "category": "seo",
