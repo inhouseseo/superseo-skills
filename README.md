@@ -6,13 +6,11 @@
 
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-One--command_install-7c3aed?logo=anthropic&logoColor=white)](#install-in-30-seconds)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-&nbsp;&nbsp;⭐ **Star this if you ship SEO work.** It's the only place these 11 skills live.
+&nbsp;&nbsp;⭐ **Star this if you ship SEO work.**
 
 ![superseo-skills page-audit running in real Claude Code on backlinko.com/title-tags](demo/page-audit-demo.gif)
 
-<sub>↑ Unedited Claude Code session. Real TUI, real tool calls, real audit. Cooked in 1m 3s. The asciinema cast is checked in at [`demo/page-audit-real.cast`](demo/page-audit-real.cast). Replay it yourself with `agg --speed 4 --idle-time-limit 0.5 --font-size 20 --theme monokai demo/page-audit-real.cast out.gif`.</sub>
-
-> **What the skill caught.** Loaded `superseo:page-audit`, fetched `backlinko.com/title-tags`, googled the keyword, then fetched and read three named competitors (Semrush, Yoast, Search Engine Land) end-to-end. Surfaced what a checklist would miss: *Backlinko teaches title tags by character count while Yoast leads with pixel width. Zero mention of AI Overviews while Semrush owns that gap.* Plus a rewritten title tag with character count. One URL in, a senior strategist's audit out, in 63 seconds.
+<sub>↑ Real Claude Code session, 1m 3s. Cast: [`demo/page-audit-real.cast`](demo/page-audit-real.cast).</sub>
 
 **Vanilla Claude vs `page-audit`:**
 
