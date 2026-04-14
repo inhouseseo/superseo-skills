@@ -1,6 +1,6 @@
-# SuperSEO Skills for Claude
+# SuperSEO Skills: Opinionated Claude Skills for SEO
 
-### 11 opinionated SEO skills. Audits, briefs, articles, link plans, expert interviews. One input each. The agent does the research itself.
+### 11 SEO skills. Audits, briefs, articles, link plans, expert interviews. One input each. The agent does the research itself.
 
 *No exports. No API keys. No paste-in data. Production-tested at [InhouseSEO](https://inhouseseo.ai).*
 
