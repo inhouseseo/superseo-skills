@@ -1,8 +1,8 @@
-# superseo-skills
+# SuperSEO Skills: Opinionated Claude Skills for SEO
 
-### Hand Claude a URL. 30 seconds later you have a 7-dimension SEO audit, 3 competitor reads, and a rewritten title tag.
+### 11 SEO skills. Audits, briefs, articles, link plans, expert interviews. One input each. The agent does the research itself.
 
-*No exports. No API keys. No paste-in data. The agent fetches everything itself.*
+*No exports. No API keys. No paste-in data. Production-tested at [InhouseSEO](https://inhouseseo.ai).*
 
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-One--command_install-7c3aed?logo=anthropic&logoColor=white)](#install-in-30-seconds)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
@@ -10,13 +10,13 @@
 
 ![superseo-skills page-audit running in real Claude Code on backlinko.com/title-tags](demo/page-audit-demo.gif)
 
-<sub>↑ Real Claude Code session, 1m 3s. Cast: [`demo/page-audit-real.cast`](demo/page-audit-real.cast).</sub>
+<sub>↑ One of the 11: `page-audit` running in real Claude Code on `backlinko.com/title-tags`, 1m 3s. Cast: [`demo/page-audit-real.cast`](demo/page-audit-real.cast).</sub>
 
-**Vanilla Claude vs `page-audit`:**
+**Same pattern across all 11 skills (`page-audit` shown):**
 
-| | Vanilla Claude prompt | superseo `page-audit` |
+| | Vanilla Claude prompt | A superseo skill |
 |---|---|---|
-| Input | "audit this page for SEO" | URL |
+| Input | "audit this page for SEO" | A URL or a keyword |
 | Competitor research | Hallucinates word counts | Fetches & reads top 3, end-to-end |
 | 404 / dead links | Audits the error page | Catches it, finds the canonical |
 | Output | Generic checklist | Named competitors, char-counted rewrites, 1–10 per dimension |
