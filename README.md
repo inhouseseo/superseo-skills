@@ -88,16 +88,38 @@ git clone https://github.com/inhouseseo/superseo-skills.git ~/superseo-skills
 ln -s ~/superseo-skills/skills/*/ ~/.claude/skills/
 ```
 
-### Claude Desktop or Claude.ai
+### Claude.ai, Claude Desktop, and Claude mobile (native Skills upload)
 
-Create a new Project. Paste the content of `skills/<skill-name>/SKILL.md` into the Project's custom instructions. Each SKILL.md is self-contained at the top level — the anti-slop rules, the step-by-step workflow, and the core heuristics all sit inline.
+Claude.ai, the Claude Desktop app (Mac / Windows), and the Claude mobile apps (iOS / Android) all support custom skills natively. Upload path: **Settings → Features → Skills → + button → upload zip**. Available on Pro, Max, Team, and Enterprise plans with code execution enabled.
 
-The `references/` folder is where the deeper material lives (content-type templates, POP test hierarchy, tactic playbooks, scoring rubrics). In Claude Desktop / Claude.ai there's no file-system access, so the agent can't dynamically load them. Two options:
+The per-skill layout in this repo was built for this upload flow. Each `skills/<name>/` folder is a complete, uploadable skill — `SKILL.md` plus its bundled `references/`. Progressive disclosure works the same way as in Claude Code: the metadata loads at startup, `SKILL.md` loads when the skill is triggered, and individual reference files load on demand when the skill body asks for them. No paste-on-every-step workflow, no separate reference library to manage.
 
-- **Project Knowledge**: upload the relevant `references/<skill>/*.md` files to the Project's Knowledge so they're searchable from the conversation. This gets you close to the Claude Code experience.
-- **Paste on demand**: when the skill tells the agent to load a specific reference (e.g., `references/content-types/how-to.md`), paste that file into the conversation at that point.
+**Option A — pre-built zips (recommended)**
 
-For the richest experience, run the skills in Claude Code — the bundled `references/` load automatically without any paste step.
+Every release attaches one zip per skill as a GitHub release asset. Grab the one you want, upload it, done:
+
+1. Open the [Releases page](https://github.com/inhouseseo/superseo-skills/releases)
+2. Download the skill you want (`page-audit.zip`, `write-content.zip`, etc.)
+3. In Claude.ai / Desktop / mobile: Settings → Features → Skills → + → upload the zip
+4. Toggle the skill on. Repeat for each skill you want.
+
+**Option B — zip a skill from the repo**
+
+If you're on a branch, using a fork, or you want a skill between releases:
+
+```bash
+git clone https://github.com/inhouseseo/superseo-skills.git
+cd superseo-skills/skills
+zip -r ~/page-audit.zip page-audit
+```
+
+Upload the resulting zip through the same + button. The zip must contain exactly one folder at the root (the skill name) with `SKILL.md` inside it — the `zip -r` command above produces this structure automatically.
+
+**A few caveats from Anthropic's docs:**
+
+- **Skills don't sync across surfaces.** A skill uploaded to Claude.ai doesn't appear in Claude Code, the API, or on another account — you upload per surface, per user.
+- Free-tier accounts don't get custom Skills. Pro or above.
+- Skills you upload are private to your individual account; there's no org-wide skill distribution on Claude.ai yet.
 
 ### Cursor
 
