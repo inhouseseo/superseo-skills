@@ -1,4 +1,4 @@
-# SuperSEO Skills — Opinionated Claude Skills for SEO
+# SuperSEO Skills: Opinionated Claude Skills for SEO
 
 **11 Claude skills for SEO encoding the methodology I actually trust: Koray Tuğberk GÜBÜR on semantic networks, Kyle Roof's POP test priorities, Lily Ray on demonstrated E-E-A-T, and the Information Gain patent research. Plus a generation-time anti-AI-slop ruleset that's not a humanizer. Production-tested at [InhouseSEO](https://inhouseseo.ai), open-sourced today.**
 
