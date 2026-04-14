@@ -113,71 +113,16 @@ Copy the content of any `skills/<skill-name>/SKILL.md` into your system prompt. 
 
 ---
 
-## What you get with InhouseSEO
+## What InhouseSEO adds
 
-The 11 skills in this repo cover the analysis and writing work you can do with web access alone. There's a class of SEO work — and a larger library of playbooks — that isn't possible without a data warehouse, ongoing site monitoring, and access to the tactics that depend on that data. That's what [InhouseSEO](https://inhouseseo.ai) adds.
+The skills in this repo handle anything an agent can research live — audits, briefs, writing, E-E-A-T, clusters, snippets, standalone link tactics. What they can't do is run against historical Search Console data or monitor a site over time. That's where [InhouseSEO](https://inhouseseo.ai) picks up.
 
-### Data and monitoring
-
-- **A GSC data warehouse.** Daily ingest from Search Console, analytical queries over 16 months of history in sub-second. Period-over-period comparisons, YoY analysis, historical keyword tracking — none of which is possible from a live Google search.
-- **Proactive signals.** Nightly analysis surfaces alerts: traffic drops, content decay, cannibalization, ranking movements, competitor jumps, CTR-gap opportunities. The weekly pulse is already written when you open the dashboard.
-- **A full site crawler.** 24+ technical issue types, the internal link graph, sitemap validation, schema detection, orphan page identification.
-- **Business context that persists.** Audience, tone, language, brand keywords, competitors — saved once, loaded automatically into every workflow.
-- **Page intelligence.** Every important page analyzed once and stored (content, keywords, crawl data, historical performance), so the next audit starts from memory instead of a cold fetch.
-
-### 13 additional workflows that need GSC data
-
-These can't run standalone because they require historical data that the agent can't pull from a live Google search:
-
-- **weekly-report** — wins, alerts, watch list, action items from connected signals
-- **keyword-opportunities** — CTR-gap quick wins and striking-distance prioritization across the full keyword portfolio
-- **traffic-decline-recovery** — root-cause diagnosis (algorithm vs technical vs content decay vs competitive vs seasonal vs SERP feature loss)
-- **content-decay** — page-level decay detection with seasonality adjustment and refresh playbook per stage
-- **cannibalization-check** — keyword conflict detection with severity scoring, merge/differentiate/de-optimize decisions
-- **top-movers** — real-time position movers with trend classification
-- **ranking-changes** — strategic pattern analysis over weeks and months
-- **compare-periods** — period-over-period attribution with confidence scoring
-- **technical-health** — prioritized remediation roadmap weighted by real traffic, not theoretical severity
-- **internal-links** — orphan detection and hub/spoke optimization from the crawled link graph
-- **index-coverage** — indexation diagnosis by root cause (technical / not crawled / crawled-not-indexed / duplicate / bloat)
-- **serp-features** — featured snippet and rich result opportunities across the tracked keyword set
-- **competitor-intelligence** — 4-phase analysis against competitors monitored continuously
-
-Plus onboarding, goal planning, weekly review, and strategic pivot workflows that save and iterate on the SEO plan across sessions.
-
-### 9 more link-building playbooks
-
-The repo ships 9 commonly-discussed tactics. The platform has 9 more — the ones with the highest conversion rates and the most specific execution detail:
-
-- **Link reclamation** — unlinked brand mention recovery. 30-50% conversion, the highest of any tactic.
-- **Existing relationships** — suppliers, clients, partners, alumni, tool testimonials. 50-80% conversion.
-- **Testimonial link building** — write-and-get-linked for tools you already use. 50-70% conversion.
-- **Broken link building** — specific search operators, outreach templates, and filtering logic.
-- **Reactive digital PR** — HARO alternatives (Source of Sources, Featured.com, Qwoted) with response workflows.
-- **Proactive digital PR** — original research campaigns that pitch to niche outlets first.
-- **Linkable assets** — statistics pages, free tools, original research. The long-term leverage play.
-- **Niche edits** — advanced, higher risk, high ROI when done right.
-- **Ego bait** — expert roundups and embeddable badge mechanics.
-
-Each one is a full playbook with step-by-step execution, email templates, search operators, common mistakes, and realistic benchmarks from the field.
-
-### The math behind the signals
-
-The formulas and thresholds that turn raw GSC data into useful alerts:
-
-- Cannibalization severity scoring with split-ratio weighting
-- Position-specific CTR percentile baselines (P25 / median / P75) from your own data
-- Decay scoring with seasonality adjustment (90-day vs 6-month vs YoY)
-- Trending-topic detection with rolling averages and impression-spike filtering
-- Keyword cluster hub/spoke topology
-
-### The MCP connector
-
-One-click connect to Claude. Everything above runs against live data automatically.
-
----
-
-If you're doing SEO for one site and the agent can do its own research each session, this repo is plenty. If you want the data warehouse, the signals, the persistent memory, and the full playbook library, that's what the platform is for.
+- **GSC data warehouse** — 16 months of Search Console history, period-over-period, keyword-level tracking
+- **Nightly signals** — traffic drops, content decay, cannibalization, CTR-gap wins, ranking moves, competitor alerts
+- **Site crawler** — 24+ technical issue types, internal link graph, schema, orphan pages
+- **13 GSC-backed workflows** — weekly-report, keyword-opportunities, traffic-decline-recovery, content-decay, cannibalization, top-movers, ranking-changes, compare-periods, technical-health, internal-links, index-coverage, serp-features, competitor-intelligence
+- **9 higher-conversion link-building playbooks** — link reclamation, existing relationships, testimonials, broken links, reactive and proactive digital PR, linkable assets, niche edits, ego bait
+- **MCP connector** — one-click connect to Claude, everything runs against live data
 
 Free 14-day trial at **[inhouseseo.ai](https://inhouseseo.ai)**.
 
