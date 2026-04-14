@@ -65,7 +65,7 @@ One command installs all 11 skills at once via the plugin system:
 
 ```bash
 /plugin marketplace add inhouseseo/superseo-skills
-/plugin install superseo-skills@superseo-skills
+/plugin install superseo@superseo-skills
 ```
 
 That's it. Every skill is now auto-discoverable (`page-audit`, `content-brief`, etc.) and each skill's `references/` folder comes with it. Updates: `/plugin marketplace update superseo-skills`.
@@ -88,38 +88,11 @@ git clone https://github.com/inhouseseo/superseo-skills.git ~/superseo-skills
 ln -s ~/superseo-skills/skills/*/ ~/.claude/skills/
 ```
 
-### Claude.ai, Claude Desktop, and Claude mobile (native Skills upload)
+### Claude.ai, Claude Desktop, and Claude mobile
 
-Claude.ai, the Claude Desktop app (Mac / Windows), and the Claude mobile apps (iOS / Android) all support custom skills natively. Upload path: **Settings → Features → Skills → + button → upload zip**. Available on Pro, Max, Team, and Enterprise plans with code execution enabled.
+Custom skill uploads via **Settings → Features → Skills → +**. Pro plan or above. One skill per upload — Claude.ai's skill UI is one-at-a-time, so grab the skill you want from the [Releases page](https://github.com/inhouseseo/superseo-skills/releases) (`page-audit.zip`, `write-content.zip`, etc.) and upload it. Each zip is a complete skill including its bundled `references/`, and progressive disclosure works the same way it does in Claude Code. Skills don't sync across surfaces, so upload per account and per device.
 
-The per-skill layout in this repo was built for this upload flow. Each `skills/<name>/` folder is a complete, uploadable skill — `SKILL.md` plus its bundled `references/`. Progressive disclosure works the same way as in Claude Code: the metadata loads at startup, `SKILL.md` loads when the skill is triggered, and individual reference files load on demand when the skill body asks for them. No paste-on-every-step workflow, no separate reference library to manage.
-
-**Option A — pre-built zips (recommended)**
-
-Every release attaches one zip per skill as a GitHub release asset. Grab the one you want, upload it, done:
-
-1. Open the [Releases page](https://github.com/inhouseseo/superseo-skills/releases)
-2. Download the skill you want (`page-audit.zip`, `write-content.zip`, etc.)
-3. In Claude.ai / Desktop / mobile: Settings → Features → Skills → + → upload the zip
-4. Toggle the skill on. Repeat for each skill you want.
-
-**Option B — zip a skill from the repo**
-
-If you're on a branch, using a fork, or you want a skill between releases:
-
-```bash
-git clone https://github.com/inhouseseo/superseo-skills.git
-cd superseo-skills/skills
-zip -r ~/page-audit.zip page-audit
-```
-
-Upload the resulting zip through the same + button. The zip must contain exactly one folder at the root (the skill name) with `SKILL.md` inside it — the `zip -r` command above produces this structure automatically.
-
-**A few caveats from Anthropic's docs:**
-
-- **Skills don't sync across surfaces.** A skill uploaded to Claude.ai doesn't appear in Claude Code, the API, or on another account — you upload per surface, per user.
-- Free-tier accounts don't get custom Skills. Pro or above.
-- Skills you upload are private to your individual account; there's no org-wide skill distribution on Claude.ai yet.
+If you want all 11 skills in one command, use the Claude Code plugin install above — that's the fastest path for the full pack.
 
 ### Cursor
 
@@ -132,7 +105,7 @@ for dir in superseo-skills/skills/*/; do
 done
 ```
 
-The same `references/` caveat as Claude Desktop applies — Cursor rule files don't dynamically load sibling directories. Paste references into the conversation when the skill calls for them, or keep the repo open in a second Cursor workspace for the agent to grep.
+Cursor rule files are static prompts, so the agent can't dynamically load sibling directories. Paste a `references/` file into the conversation when the skill calls for one, or keep the repo open in a second Cursor workspace for the agent to grep.
 
 ### Any other agent
 
