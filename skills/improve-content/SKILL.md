@@ -87,7 +87,7 @@ Load from `references/` only when needed — don't preload the whole folder.
 - Common: `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
 - Content and news: `statistics-page.md`, `news-article.md`, `news-analysis.md`, `news-explainer.md`, `interview.md`, `glossary-page.md`
 - Commercial: `alternatives-page.md`, `buying-guide.md`, `product-page.md`, `category-page.md`, `integration-page.md`, `location-page.md`, `programmatic-page.md`
-- `references/content-types-overview.md` for the decision table across all 23 content types (load this FIRST if unsure which type to pick)
+- `references/content-types-overview.md` for the decision table across all 26 content types (load this FIRST if unsure which type to pick)
 
 **Locale overrides** (load only when relevant):
 - `locale-ja.md` — Japanese-market overrides: character counts, tiered anti-slop rules for Japanese AI tells, voice/register (だ/である vs です/ます), notation variants (表記ゆれ). Load when rewriting a Japanese-language page.

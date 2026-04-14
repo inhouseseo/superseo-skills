@@ -125,6 +125,17 @@ Japanese news content has specific structural conventions on top of the English 
 - **画像キャプション**: concise but information-dense. Alt text should describe the image specifically — do not duplicate the article title.
 - **更新表示**: explicit "最終更新：YYYY年MM月DD日 HH:MM" timestamp. Append updates in chronological order.
 
+**Japanese news H2 template** — when writing a Japanese news article, use these Japanese-literal H2 headings instead of translated English ones. The inverted-pyramid structure from the English `news-article.md` template maps one-to-one:
+
+| English news-article.md H2 | Japanese equivalent |
+|---|---|
+| Key takeaways | 要点 |
+| What happened | 何が起きたか |
+| Why it matters | なぜ重要か |
+| What to expect next | 今後の見通し |
+| Background / Context | 背景・文脈 |
+| FAQ | よくある質問 |
+
 ## GEO — Japanese specifics
 
 Japanese LLM search (Google AI Overview, Perplexity Japan, ChatGPT search) has the same recency and citation-first behavior as English LLM search, plus these adjustments:

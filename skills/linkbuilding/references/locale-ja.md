@@ -40,7 +40,7 @@ Execution note: PR TIMES press releases that feature in Yahoo! News or SmartNews
 
 ## Citations and directories — Japanese equivalents
 
-The English tactic-02 playbook (`references/tactics/citations-directories.md`) targets US/EU directory patterns. For Japanese sites, replace or supplement with:
+The `references/tactics/citations-directories.md` playbook targets US/EU directory patterns. For Japanese sites, replace or supplement with:
 
 **General directories:**
 - **iタウンページ** — NTT's business directory. Free, high authority, dofollow. Foundation-phase mandatory.
