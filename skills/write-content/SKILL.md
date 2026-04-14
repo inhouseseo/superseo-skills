@@ -156,9 +156,12 @@ Load from `references/` only when the step or rule calls for them. Don't preload
 
 **Content type templates** (`references/content-types/`) — load one after Phase 2:
 - Common: `how-to.md`, `definition.md`, `comparison.md`, `listicle.md`, `pillar-page.md`, `faq-page.md`, `landing-page.md`, `service-page.md`, `case-study.md`
-- Content and news: `statistics-page.md`, `news-article.md`, `glossary-page.md`
+- Content and news: `statistics-page.md`, `news-article.md`, `news-analysis.md`, `news-explainer.md`, `interview.md`, `glossary-page.md`
 - Commercial: `alternatives-page.md`, `buying-guide.md`, `product-page.md`, `category-page.md`, `integration-page.md`, `location-page.md`, `programmatic-page.md`
 - `references/content-types-overview.md` for the decision table across all 23 content types (load this FIRST if unsure which type to pick)
+
+**Locale overrides** (load only when relevant):
+- `locale-ja.md` — Japanese-market overrides: character counts, tiered anti-slop rules for Japanese AI tells, voice/register (だ/である vs です/ます), notation variants (表記ゆれ), Japanese authority sources, E-E-A-T conventions. Load when the target content is in Japanese.
 
 **Writing technique modules** (`references/`) — load when the matching Phase 4 rule needs more depth:
 - `anti-slop-ruleset.md` — full tiered banned vocab + structural tell list (when the inline anti-slop block isn't catching something)

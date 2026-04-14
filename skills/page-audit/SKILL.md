@@ -284,3 +284,4 @@ Load from `references/` only when the step calls for them — don't preload the 
 - **`eeat-scoring-rubric-compact.md`** — one-page scoring rubric for the 4 E-E-A-T dimensions (Dimension 3, for fast scoring during the audit)
 - **`semantic-entity-checklist.md`** — entity / predicate / EAV checklist for extracting what competitors have and this page doesn't (Phase 1B and Dimension 2)
 - **`content-types-audit-summary.md`** — content-type-specific audit criteria across all 23 types (Phase 0, after content identity is classified, for type-specific red flags)
+- **`locale-ja.md`** — Japanese-market overrides for every dimension: character count thresholds, Japanese E-E-A-T conventions (corporate > individual authority), Yahoo! News constraint, Discover/はてブ signals, news-media Dimension 7 reframing. Load when auditing a Japanese-language page.

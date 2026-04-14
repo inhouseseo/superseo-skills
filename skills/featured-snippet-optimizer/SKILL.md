@@ -105,6 +105,13 @@ Google's snippet extractor looks at this structure specifically. The answer bloc
 - 3-6 rows usually
 - Keep each cell short (1-10 words)
 
+### For Japanese snippets (日本語):
+- Paragraph: 80-120 full-width characters (not 40-60 words)
+- Ordered list: 30-50 characters per item
+- "What is X" queries: 「○○とは」 format, same paragraph rules
+- "How to X" queries: 「○○ やり方」 format, same ordered-list rules
+- Keep primary keyword within the first 40 characters of the answer block
+
 ## Step 8: Output
 
 ### Current State

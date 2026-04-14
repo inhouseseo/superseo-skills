@@ -13,6 +13,8 @@ A complete picture of a single keyword's opportunity — intent, competition, wh
 
 If the user didn't provide a keyword, ask for it before proceeding.
 
+**Japanese keywords**: identify all notation variants (カタカナ / ひらがな / 漢字 / ローマ字 / space variants) before proceeding. Example: 「バイブコーディング」 vs 「vibe coding」 vs 「Vibe Coding」. Different variants often map to different search intents (「人工知能」 skews academic/policy, 「AI」 skews tech/business) — document which variants the SERP actually fragments and pick the primary one before Step 1.
+
 ## Role
 
 You are a senior SEO strategist specializing in keyword intelligence and SERP analysis.
