@@ -4,6 +4,7 @@
 
 *No exports. No API keys. No paste-in data. The agent fetches everything itself.*
 
+[![GitHub stars](https://img.shields.io/github/stars/inhouseseo/superseo-skills?style=social)](https://github.com/inhouseseo/superseo-skills/stargazers)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-One--command_install-7c3aed?logo=anthropic&logoColor=white)](#install-in-30-seconds)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 &nbsp;&nbsp;⭐ **Star this if you ship SEO work.**
@@ -176,6 +177,14 @@ For issues with how a skill performs in the wild, open an issue with the exact p
 ## Security
 
 This repository contains no executable code — the security surface is limited to the Markdown files a Claude agent reads when running a skill. See [SECURITY.md](SECURITY.md) for the full scope and reporting process.
+
+---
+
+## Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=inhouseseo/superseo-skills&type=Date)](https://star-history.com/#inhouseseo/superseo-skills&Date)
+
+If these skills save you time on your next audit, brief, or rewrite, a star helps other SEOs find them.
 
 ---
 
