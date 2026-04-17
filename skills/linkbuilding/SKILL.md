@@ -115,3 +115,4 @@ Load from `references/` only when the step or situation calls for them.
 - `phase-classification-tree.md` — decision tree when Step 1 signals are ambiguous
 - `anchor-text-safety-guide.md` — full anchor safety framework and penalty recovery (Step 3)
 - `link-velocity-redflags.md` — velocity red flags and SpamBrain patterns (diagnosing a traffic drop that looks link-related)
+- `locale-ja.md` — Japanese-market overrides: platforms (note, Qiita, Zenn, PR TIMES, はてブ, NewsPicks), Japanese government directories (iタウンページ, 法人番号公表サイト), authority sources (総務省, IPA, NICT), Japanese-specific phase signals, seasonal velocity cycles. Load when planning links for a Japanese-language site.

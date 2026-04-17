@@ -47,7 +47,7 @@ If PAA questions appear for this keyword, write them down verbatim. They'll beco
 
 Pick the content type from the SERP pattern. Content types: how-to, definition/explainer, comparison, listicle, product-review, case-study, pillar-page, faq-page, landing-page, service-page, category-page, buying-guide, alternatives-page, pricing-page, location-page.
 
-Load `references/content-types-overview.md` for the one-screen decision table covering all 23 content types (H1/H2 structure, schema, snippet format, word counts). Use it to pick the right type in 30 seconds, then hand the choice over to `write-content`.
+Load `references/content-types-overview.md` for the one-screen decision table covering all 26 content types (H1/H2 structure, schema, snippet format, word counts). Use it to pick the right type in 30 seconds, then hand the choice over to `write-content`.
 
 ## Step 5: Produce the Brief
 
