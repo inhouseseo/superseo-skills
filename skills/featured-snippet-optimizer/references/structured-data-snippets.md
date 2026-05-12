@@ -15,7 +15,7 @@ Additionally, structured data is how content gets cited by AI Overviews and AI s
 | Blog post | Featured snippet, PAA | Article, FAQPage |
 | How-to guide | HowTo card, Featured snippet | HowTo, FAQPage |
 | Product page | Product rich result, Review stars | Product, Review, Offer |
-| FAQ page | FAQ dropdown | FAQPage |
+| FAQ page | AI Overview citation, PAA | FAQPage |
 | Comparison | Comparison table, Review stars | Article, Product, Review |
 | Recipe | Recipe card | Recipe |
 | Event | Event listing | Event |
@@ -26,7 +26,7 @@ Additionally, structured data is how content gets cited by AI Overviews and AI s
 ### Step 1: Identify Feature Opportunities
 1. Use SERP feature detection from to see which features appear for target keywords
 2. Search the keyword manually -- what features are currently showing?
-3. Note: featured snippets, PAA boxes, FAQ dropdowns, HowTo cards, video carousels
+3. Note: featured snippets, PAA boxes, HowTo cards, video carousels
 4. Check if any competitor has a SERP feature you could capture
 
 ### Step 2: Content Formatting for Featured Snippets
@@ -88,7 +88,7 @@ Additionally, structured data is how content gets cited by AI Overviews and AI s
 
 ## Tips
 
-- **PAA as keyword research**: "People Also Ask" questions are literally Google telling you what related queries users search. Answer them in your content -> potential FAQ rich results.
+- **PAA as keyword research**: "People Also Ask" questions are literally Google telling you what related queries users search. Answer them in your content -> PAA placement and AI Overview citations.
 - **Featured snippet "sniping"**: Find a keyword where the current featured snippet is mediocre. Write a better, more direct answer in the same format. Google swaps snippets regularly.
 - **Don't over-schema**: Adding 50 FAQ items or marking up content that doesn't qualify for a schema type can trigger manual actions. Only mark up content that genuinely matches the schema type.
 - **AI Overview sourcing**: Structured data helps your content get selected as a source for AI Overviews. Content with clear schema markup is easier for AI systems to parse and cite.

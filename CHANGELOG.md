@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- FAQ guidance refocused on AI Overview citation and entity understanding. Google retired the FAQ rich result SERP feature; FAQPage schema is still recommended (schema is still parsed for entity signals and AI citation). Updates: `structured-data-snippets.md` (×3), `content-types/faq-page.md` (×3), `geo-optimization.md`.
+
 ## [0.2.0] - 2026-04-13
 
 Restructures every skill to the bundled-references layout so the skills work identically in every environment (Claude Code plugin, Claude Desktop, Cursor, bare markdown). The 39 research files from the old top-level `research/content-writing/` and `research/linkbuilding/` folders have been distributed into per-skill `references/` folders, and 28 new skill-specific reference files have been written to fill gaps where the skill body pointed at material that didn't exist. Installs as a Claude Code plugin marketplace with one command.

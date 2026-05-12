@@ -75,7 +75,7 @@ H2: Still have questions?
 - Answers that are too long (200+ words) -- defeats the purpose of an FAQ
 - Answers that are too short (one sentence) -- provides no value and looks thin
 - No logical grouping of questions (random order confuses readers)
-- Missing FAQPage schema markup (loses rich result opportunity)
+- Missing FAQPage schema markup (loses AI Overview citation lift — ~3x per vendor studies; Google still uses it for entity understanding)
 - Duplicating content from other pages instead of summarizing and linking
 - Not updating after launch (FAQ pages go stale quickly)
 

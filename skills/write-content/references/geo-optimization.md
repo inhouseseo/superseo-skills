@@ -113,7 +113,7 @@ The writing skill should optimize for BOTH simultaneously. The overlap is large:
 | Signal | Google Ranking | AI Citation |
 |--------|---------------|-------------|
 | Clear, extractable answers | Featured snippets | Direct citation |
-| FAQ schema | Rich results | 3.2x citation rate |
+| FAQ schema | Entity understanding | 3.2x citation rate |
 | E-E-A-T signals | Quality score | Authority weight |
 | Structured headings | Crawlability | Parsability |
 | Specific data with sources | Information gain | Verifiability |
