@@ -96,6 +96,8 @@ Fetch and read the full rendered page. Note everything that could be an E-E-A-T 
 - Site has no topical focus
 - No internal linking cluster
 
+**For Japanese pages**: corporate/publication brand often outweighs individual author authority in Japan. 日経, NHK, IT Media, 朝日 carry authority on their own, even without a verifiable individual bio. Weight publication reputation higher than individual author verification when scoring Authoritativeness on a Japanese page.
+
 ### Trustworthiness
 
 **What you're looking for:** transparency and honesty.

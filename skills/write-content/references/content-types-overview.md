@@ -1,6 +1,6 @@
 # Content Types Overview
 
-Quick-reference index covering all 23 content-type templates. Use this file to pick the right content type for a SERP, check its target word count, dominant schema, snippet format, and H1/H2 skeleton without loading the full per-type file. Load the individual `content-types/<type>.md` only when you need the depth (process detail, anti-AI focus, common mistakes, example topics).
+Quick-reference index covering all 26 content-type templates. Use this file to pick the right content type for a SERP, check its target word count, dominant schema, snippet format, and H1/H2 skeleton without loading the full per-type file. Load the individual `content-types/<type>.md` only when you need the depth (process detail, anti-AI focus, common mistakes, example topics).
 
 ## Decision table
 
@@ -12,6 +12,9 @@ Quick-reference index covering all 23 content-type templates. Use this file to p
 | faq-page | Informational | 1,500-2,500 | FAQPage + BreadcrumbList | Paragraph (per Q) | "[Topic] FAQ: Veelgestelde vragen over [topic]" | Intro / Category 1 / Category 2 / Costs |
 | statistics | Informational | 2,000-3,500 | Article + Dataset | List | "[Topic] Statistics [Year]: [X] Key Facts and Trends" | Key highlights / Category stats / Regional data / Trends |
 | news | Informational + navigational | 800-1,500 | NewsArticle + FAQ | Paragraph | "[News event]: [Impact or what it means]" | Key takeaways / What happened / Why it matters / What to expect |
+| news-analysis | Informational | 1,500-3,500 | NewsArticle + FAQ | Paragraph | "[Event]: [What it actually means for X]" | What actually happened / Why this is bigger than it looks / Immediate impact / Second-order effects |
+| news-explainer | Informational | 1,200-2,500 | Article + DefinedTerm | Paragraph | "What is [term]? [One-line framing]" | Why you're hearing about it now / What it actually means / How it works / Why it matters |
+| interview | Informational + thought leadership | 2,000-4,000 | Article + Person (interviewee) | Paragraph (quote-based) | "[Name]: [Provocative claim or unique POV]" | Quick context / Q&A 1 / Q&A 2 / Q&A 3 |
 | thought-leadership | Informational | 1,200-2,500 | Article + Person | Paragraph (low priority) | "[Strong opinion or provocative question]" | Conventional wisdom / Why it's wrong / Supporting arguments / Counterarguments |
 | glossary | Informational | 5,000-15,000 (200-400/term) | DefinedTermSet + BreadcrumbList | Paragraph (per term) | "[Industry] Woordenlijst: [X] Begrippen Uitgelegd" | Intro / A / B / C ... |
 | comparison | Commercial investigation | 1,200-2,500 | FAQ + Product | Table | "[Product A] vs [Product B]: [Outcome promise]" | Quick verdict / At-a-glance table / How we compared / Head-to-head |
