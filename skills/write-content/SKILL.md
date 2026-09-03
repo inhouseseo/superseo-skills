@@ -50,7 +50,7 @@ Based on what's ranking, pick a content type: how-to, definition/explainer, comp
 State it plainly:
 "The top results for [keyword] are all [format]. I'll write a [content type] with [key structural element]. Sound good, or did you have something else in mind?"
 
-Wait for confirmation.
+Wait for confirmation. If the user already asked for the article in one go, or there's nobody to respond (autonomous run), state your choice with a one-line reason and keep going.
 
 Load `references/content-types-overview.md` for the decision table covering all 23 content types. Then load the specific template from `references/content-types/<type>.md` (e.g., `references/content-types/how-to.md`) for H1/H2 structure, schema, featured snippet format, CTA placement, word count targets. The 19 content types bundled as full templates: how-to, definition, comparison, listicle, pillar-page, faq-page, landing-page, service-page, case-study, statistics-page, news-article, glossary-page, alternatives-page, buying-guide, product-page, category-page, integration-page, location-page, programmatic-page. For the 4 types covered only by the overview table (thought-leadership, product-reviews, pricing-pages, about-pages), those live under `eeat-audit/references/content-types/` because the E-E-A-T bar for them is the load-bearing factor.
 
@@ -64,6 +64,8 @@ Ask 2-3 quick questions to extract unique knowledge the user has. Pick from:
 - "Who should NOT follow this advice, and why?"
 
 Ask one at a time. Keep it quick.
+
+If the user can't or won't answer — autonomous run, or they skip the questions — write from Phase 1 research alone and note in the delivery where first-party input would lift the article.
 
 **Adapt style**:
 - Newer/smaller site, less SEO-savvy user: conversational, explain why each question matters
@@ -80,6 +82,7 @@ Produce the complete article in clean markdown. Follow ALL of these rules:
 - Take clear positions. "We tested this and X works better than Y" beats "both X and Y have merits."
 - Use "you" and "I/we" — write to one person, not an audience.
 - Include specific numbers, names, dates. Never "many companies" — always "[Company] in [year]."
+- Specifics must be real: pulled from the Phase 1 research, the interview answers, or the business context. Never invent a number, name, study, or citation — an invented specific is worse than a generic sentence. No real one available? Ask, or cut the claim.
 - Weave in interview answers as first-person experience. Preserve phrasing where it sounds natural.
 - Use contractions: "doesn't" not "does not."
 - Show thinking changing: "At first I thought this was a branding problem — turns out it was pricing all along." Self-correction is a human signal.

@@ -38,7 +38,7 @@ Classify the phase:
 - **Growth phase**: 1-3 years, 20-100 pages of content, some brand mentions, likely DR 16-40
 - **Authority phase**: 3+ years, established brand, knowledge panel, media mentions, likely DR 41+
 
-State your reasoning. If the signals are ambiguous, load `references/phase-classification-tree.md` for the full decision tree before falling back on asking the user.
+State your reasoning, naming which signals you actually observed. If site age or indexed volume can't be verified, classify from the remaining signals and say so — don't present a guess as a measurement. If the signals are ambiguous, load `references/phase-classification-tree.md` for the full decision tree before falling back on asking the user.
 
 ## Step 2: Phase-Appropriate Tactics
 

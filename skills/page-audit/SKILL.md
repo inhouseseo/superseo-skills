@@ -47,6 +47,8 @@ Google the primary keyword. Read the top 10 results, with special attention to t
 
 Do not skip this step. A page audit without competitive context is a generic checklist.
 
+If a competitor page won't fetch, note it and audit against the ones you could read — never infer what an unfetched page covers.
+
 ## PHASE 0: GOAL DISTILLATION & CONTEXT MAPPING
 
 Before scoring, answer these (show your reasoning):

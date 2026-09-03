@@ -27,6 +27,8 @@ Google the target keyword. Read the top 10 results. For each top-ranking page, n
 - What they cover that others don't
 - Whether they appear to hold a featured snippet, People Also Ask positions, or other SERP features
 
+Base every claim in the brief on pages you actually read. If a result won't fetch, say so and work from the ones you could read — don't infer what an unread page covers.
+
 ## Step 2: Identify Search Intent
 
 Classify dominant intent: **Informational / Commercial Investigation / Transactional / Navigational**.
