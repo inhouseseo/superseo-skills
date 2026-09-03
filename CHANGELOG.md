@@ -6,9 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-09-03
+
 ### Changed
 
-- FAQ guidance refocused on AI Overview citation and entity understanding. Google retired the FAQ rich result SERP feature; FAQPage schema is still recommended (schema is still parsed for entity signals and AI citation). Updates: `structured-data-snippets.md` (×3), `content-types/faq-page.md` (×3), `geo-optimization.md`.
+- **Grounding rules added to every research-driven skill.** Each skill that reads the SERP or fetches competitor pages now states explicitly that claims must come from pages actually read or user-provided input — never inferred or invented when a fetch fails. `write-content` and `improve-content` additionally require article specifics (numbers, names, citations) to come from research, interview answers, or business context. Updates across 10 SKILL.md files: `content-brief`, `page-audit`, `keyword-deep-dive`, `semantic-gap-analysis`, `topic-cluster-planning`, `featured-snippet-optimizer`, `linkbuilding`, `eeat-audit`, `write-content`, `improve-content`. (#10)
+- **Autonomous-run escape hatches.** `write-content` no longer hard-blocks on content-type confirmation or the knowledge-extraction interview, and `improve-content` no longer blocks on the update interview, when the user asked for output in one go or isn't there to answer — the skills proceed with stated assumptions and flag where first-party input would help. `expert-interview` is unchanged (interactive by design). (#10)
+- FAQ guidance refocused on AI Overview citation and entity understanding. Google retired the FAQ rich result SERP feature; FAQPage schema is still recommended (schema is still parsed for entity signals and AI citation). Updates: `structured-data-snippets.md` (×3), `content-types/faq-page.md` (×3), `geo-optimization.md`. (#8)
 
 ## [0.2.0] - 2026-04-13
 
@@ -92,6 +96,7 @@ Initial public release of the SuperSEO Skills pack: 11 opinionated Claude skills
 - Anti-AI-slop ruleset draws on [Wikipedia's AI cleanup project](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), StyloAI's stylometric research, [blader/humanizer](https://github.com/blader/humanizer), and [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing)
 - GEO research references the [Princeton / Georgia Tech / AI2 / IIT Delhi GEO paper (Aggarwal et al., KDD 2024)](https://arxiv.org/abs/2311.09735)
 
-[Unreleased]: https://github.com/inhouseseo/superseo-skills/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/inhouseseo/superseo-skills/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/inhouseseo/superseo-skills/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/inhouseseo/superseo-skills/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/inhouseseo/superseo-skills/releases/tag/v0.1.0
