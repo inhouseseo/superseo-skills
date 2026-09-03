@@ -30,6 +30,8 @@ Note:
 - What sub-topics emerge from PAA and related searches?
 - What specific questions do people ask?
 
+Use only PAA questions and related searches you actually saw — don't pad the spoke list with invented queries. If the SERP shows few, say so and lean harder on competitor coverage.
+
 ## Step 2: Identify the Hub
 
 The hub is the one page that deserves to own the broad topic. It should:

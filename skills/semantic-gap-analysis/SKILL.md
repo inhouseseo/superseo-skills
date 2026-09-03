@@ -29,7 +29,7 @@ Fetch the URL. Extract:
 
 ## Step 2: Read the Top 3 Competitors
 
-Google the target keyword. Fetch the top 3 results in full. For each:
+Google the target keyword. Fetch the top 3 results in full. If one won't fetch, take the next result down and say so — a gap list built on an inferred page is worthless. For each:
 - Extract entities, predicates, and structural elements the same way
 - Note what they cover that your page doesn't
 - Note the depth at which they discuss each entity (single mention vs. full section)

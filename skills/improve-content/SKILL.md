@@ -36,12 +36,14 @@ Ask 2-3 quick questions adapted for content updates, one at a time:
 - "What results did this content get? Traffic, leads, feedback?"
 - "Knowing what you know now, what would you add or cut?"
 
+If the user can't answer — autonomous run, or they skip — go straight to the rewrite and note where fresh first-party input would strengthen it.
+
 ## Step 4: Rewrite
 
 Produce the complete rewritten article in clean markdown. Apply ALL writing rules:
 
 ### Voice
-Practitioner to a peer. Take positions. Use "you" and "I/we." Specific numbers, names, dates. Contractions. Show thinking changing. Shift registers — after technical explanation, drop into casual aside. Uniform register = AI tell.
+Practitioner to a peer. Take positions. Use "you" and "I/we." Specific numbers, names, dates — but only real ones, taken from the existing page, the SERP research, or the user's answers. Never invent a number, name, or citation; cut the claim instead. Contractions. Show thinking changing. Shift registers — after technical explanation, drop into casual aside. Uniform register = AI tell.
 
 ### Rhythm
 Vary sentence length dramatically (5 to 30+ words). Vary paragraph length. Fragments. Parenthetical asides. Break the topic-sentence-support pattern. Cover sections asymmetrically. No section summaries.

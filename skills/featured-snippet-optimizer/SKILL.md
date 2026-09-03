@@ -26,6 +26,8 @@ Google the target keyword. Observe:
 - What format is it? Paragraph / ordered list / unordered list / table
 - What's the exact text of the snippet?
 
+Quote the snippet text exactly as shown. If you can't see the SERP, say so — don't reconstruct it from memory.
+
 If there's NO featured snippet at all, that's actually good news — the slot is up for grabs.
 
 ## Step 2: Classify the Query Format

@@ -57,7 +57,7 @@ Fetch and read the full rendered page. Note everything that could be an E-E-A-T 
 
 ### Expertise
 
-**What you're looking for:** accurate facts and depth beyond surface level.
+**What you're looking for:** accurate facts and depth beyond surface level. Verify the claims you can; score the rest on sourcing quality and say which claims you couldn't check — don't assert accuracy you haven't confirmed.
 
 **Strong signals:**
 - Every factual claim is accurate and verifiable
